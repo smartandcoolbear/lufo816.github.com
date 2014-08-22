@@ -5,18 +5,22 @@ layout: page
 
 a
 
-> Minimalist | Appleist | Unixer | Coder
+> Student in SMIE,SYSU
 
 who involved in 
 
-> [github](https://github.com/waynezhang)
+> [github](https://github.com/lufo816)
 
-mail 
+mail
 
-> echo srvpqxfbyqfvpdtkbjwt | tr yxwvtsrqpkjfdb zuonmlihgeca@.
+> lufo816@gmail.com
 
 or follow 
 
-> [@o_lll](https://twitter.com/#!/o_lll)
+> [lufo_in_twitter](https://twitter.com/lufo816)
+
+or
+
+>[lufo_in_zhihu](http://www.zhihu.com/people/lufo)
 
 to reach me
