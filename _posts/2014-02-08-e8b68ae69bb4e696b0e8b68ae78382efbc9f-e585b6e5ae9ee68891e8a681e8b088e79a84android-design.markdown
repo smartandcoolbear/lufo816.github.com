@@ -1,0 +1,60 @@
+---
+author: lufo
+comments: true
+date: 2014-02-08 12:29:04+00:00
+layout: post
+slug: '%e8%b6%8a%e6%9b%b4%e6%96%b0%e8%b6%8a%e7%83%82%ef%bc%9f-%e5%85%b6%e5%ae%9e%e6%88%91%e8%a6%81%e8%b0%88%e7%9a%84android-design'
+title: 越更新越烂!？——其实我要谈的是Android Design
+wordpress_id: 139
+categories:
+- 产品
+---
+
+今天更新了下Fuubo，进去后简直怀疑这是不是官方版本，马上想好怎么吐槽了：Action Bar干着Tabs的活，刻意追求去掉Action Split Bar却弄了个其丑无比的刷新+发微博按钮在右下角，照片竟然改成单击返回，查看照片时上面的黑框竟然去不掉，你让处女座怎么办！……再看看豌豆荚上的评论，特摘几条如下：
+
+
+<blockquote>快给我恶心死了 大家千万不要更新 更新了之后一点动图就秒退一点动图就秒退 好不容易找到一个好用的微博客户端 结果更新之后就悲剧了 果断卸载!!!
+
+测试版体验很不好！
+
+至少热门微博热门话题的功能不能去掉吧
+
+伤心啊，曾经的付博，如今的弃儿</blockquote>
+
+
+这是前五条中的四条，全是差评，还有一条是
+
+
+<blockquote>完爆四次元</blockquote>
+
+
+这个有点意思，恰好我看Fuubo不爽后更新了四次元，尼玛感觉同样远不如旧版，具体就不吐槽了。但是仔细想一下，这种「越更新越烂」思想早已深入人心了，不信看看微信5.2的评论。人们对新事物都有种恐惧感，自己早已熟悉的软件突然换了另一幅模样任谁都要抗拒（看见了没，这就是需求啊，哪个应用商店给做个保留旧版本功能？）。其实仔细思考一下，新版Fuubo也没用这么烂。
+
+其实Fuboo一直在努力做的就是去掉Action Split Bar，因为按照Google的标准，Android底部应该有原生Bar，就是那三个按键，然后再加个Action Split Bar真心很蛋疼。现在手机大屏化，要想把常用操作放在Action Bar上单手真心够不到，当然Google自家应用就是把操作放到Action Bar上，但我在Google Play上搜索时总要动另一只手，真心很蛋疼，所以这真心是个世界性难题，怎样不加Action Split Bar又能让用户方便的进行常用操作？我能想到的有几种方法：
+
+
+
+	
+  * 最根本也是最不现实的：Google规定那三个键做成实体的，这样就不存在底栏两个Bar的违和感了。
+
+	
+  * 最现实的：使用Translucent Bar，但我个人对这并不感冒，上滑消失下滑重现，真心很影响阅读，略蛋疼。
+
+	
+  * 比较现实效果也不错：这里可能要被喷了，我要说的就是SB，对，Smart Bar。原生Bar和Action Split Bar整合在一起，底栏放Home，返回和其他两三个常用操作，不常用的操作放在二层菜单或者Drawer里，这个方法看起来不错。
+
+
+既然Action Bar不放action了，那只有个应用名称下面往往还跟个Tabs岂不是很奇怪？怎么改进？
+
+
+
+	
+  * 恰恰是新版Fuubo提出了一个靠谱的办法：把Tabs整合进Action Bar，原先放action的地方放tab，比如Fuubo把「提到我的」和「评论我的」放到了Action Bar里，切换页面逻辑上看应该是Tabs的活，但放在Action Bar里视觉上却还能接受。
+
+	
+  * 如果Tabs的内容不能用图表表示以至于太长，我感觉甚至可以去掉Action Bar，老版四次元就是这么做的。
+
+
+说到这里，肯定有人喷说这压根不是Android Design，没错，连Action Bar都去了谈什么Android Design？我想表达的是，现在的Android Design标准有个很大的问题：在手机大屏化的今天完全遵循表面的Android Design，至少完全按照Google官方应用的样子去设计应用会使单手操作很困难。所以，开发者不应拘泥于Android Design而应做出些改变，Google官方也应不断改进完善Android Design标准。
+
+回到Fuubo，其他暂且不说，顶栏Action Bar与Tabs合二为一其实是个不错的尝试。我理想中大部分Android应用应该用一底栏一顶栏，底栏放常用操作，包括Home和返回，顶栏放应用logo和Tabs。这样想来，其实新版Fuubo倒也挺符合的，Smart Bar也不是那么SB了。

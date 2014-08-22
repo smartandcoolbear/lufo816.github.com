@@ -1,0 +1,125 @@
+---
+author: lufo
+comments: true
+date: 2013-10-24 09:02:32+00:00
+layout: post
+slug: '%e5%87%ba%e6%a0%88%e5%ba%8f%e5%88%97%e7%9a%84%e5%8f%af%e8%83%bd%e6%83%85%e5%86%b5%e4%b8%aa%e6%95%b0'
+title: 出栈序列的可能情况个数
+wordpress_id: 50
+categories:
+- 编程
+---
+
+原题目：
+
+
+<blockquote>
+
+> 
+> Description
+> 
+> 
+
+> 
+> 
+
+小明很喜欢玩射击游戏。这周末，他完成了数据结构作业之后，又来到了射击娱乐场。他从老板那租了一把步枪和装有N发子弹的弹夹。注意：所有的子弹都从枪口上膛。在射击的过程中，小明每次都有两种选择：从弹夹中取出一颗子弹上膛，或者打一发子弹出去。恰巧，这周二，小明刚上了数据结构中《栈》那一章，于是，他想通过“栈”的数据结构来算出究竟有多少种不同的子弹打出顺序。假设N颗子弹的编号为1,2,…,N。子弹从弹夹中取出的顺序也是从1到N。你可以帮小明解决这个问题吗？
+
+
+> 
+> 
+
+> 
+> Input
+> 
+> 
+
+> 
+> 
+
+可能有多个测试输入，第一行给出总共的测试输入的个数。
+
+对于每个测试输入，只有一个整数N。
+
+
+> 
+> 
+
+> 
+> Output
+> 
+> 
+
+> 
+> 
+
+输出一个整数，即所有不同序列的总数目。
+
+
+> 
+> 
+
+> 
+> Sample Input
+> 
+> 
+
+> 
+> 
+
+>     
+>     1
+>     3
+> 
+> 
+
+> 
+> 
+
+> 
+> Sample Output
+> 
+> 
+
+> 
+> 
+
+>     
+>     5
+> 
+> 
+
+> 
+> </blockquote>
+
+
+本质为求出栈序列的可能个数，这其实是一个**卡塔兰数**，详细内容请参见[维基百科](http://zh.wikipedia.org/wiki/%E5%8D%A1%E5%A1%94%E5%85%B0%E6%95%B0)。下面给出我的代码：
+
+[cpp]
+
+#include<iostream>
+using namespace ::std;
+
+double factorial(double a) {//用double处理较大的数据
+double i = 1, s = 1;
+for (i = 1; i <= a; i++) {
+s *= i;
+}
+return s;
+}
+
+double combination(double a, double b) {
+return factorial(a) / factorial(b) / factorial(a - b);
+}
+
+int main() {
+double t = 0, n = 0;
+cin >> t;
+while (t--) {
+cin >> n;
+cout << combination(2 * n, n) - combination(2 * n, n + 1) << endl;
+}
+return 0;
+}
+
+[/cpp]

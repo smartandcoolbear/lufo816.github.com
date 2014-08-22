@@ -1,0 +1,143 @@
+---
+author: lufo
+comments: true
+date: 2013-12-05 13:06:34+00:00
+layout: post
+slug: 1019-%e6%9d%a8%e6%b0%8f%e7%9f%a9%e9%98%b5%e6%9f%a5%e6%89%be-%e5%93%88%e5%b8%8c%e6%80%9d%e6%83%b3%e8%bf%90%e7%94%a8
+title: 1019. 杨氏矩阵查找——哈希思想运用
+wordpress_id: 120
+categories:
+- 编程
+---
+
+<blockquote>
+
+> 
+> Description
+> 
+> 
+
+> 
+> 
+
+杨氏矩阵，即在一个二维数组中，每一行都按照从左到右严格递增的顺序排序，每一列都按照从上到下严格递增的顺序排序。请完成一个函数，输入这样的一个N*N的二维数组和M个整数，判断数组中是否含有上述M个整数。你能解决这个问题吗？
+
+
+
+
+> 
+> 
+
+> 
+> Input
+> 
+> 
+
+> 
+> 
+
+可能有多个测试输入，第一行给出总共的测试输入的个数。
+
+对于每个测试输入，第一行包含两个正整数N和M，接下来是一个N*N的杨氏矩阵，最后是M个待查找的整数(0<N<1000,0<M<10000)。
+
+
+> 
+> 
+
+> 
+> Output
+> 
+> 
+
+> 
+> 
+
+对于每一个待查找的整数，输出true或false，即判断矩阵中是否含有该整数。
+
+
+
+
+> 
+> 
+
+> 
+> Sample Input
+> 
+> 
+
+> 
+>  Copy sample input to clipboard
+> 
+> 
+
+> 
+> 
+
+>     
+>     1
+>     5 3
+>     1 5 10 15 20
+>     2 7 13 18 24
+>     3 9 15 21 28
+>     4 12 20 28 32 
+>     5 15 24 30 35
+>     15
+>     31
+>     35
+> 
+> 
+
+> 
+> 
+
+> 
+> Sample Output
+> 
+> 
+
+> 
+> 
+
+>     
+>     true
+>     false
+>     true
+> 
+> 
+
+> 
+> </blockquote>
+
+
+开始时想用二分查找做，超时。后来想到了哈希，声明一个数组，设每次输入的矩阵中的数为a, 把b[a]设为true, 矩阵输入完成后输入数c, 若b[c][/c]为true, 则c在矩阵中，代码如下：
+
+[cpp]
+
+#include <cstdio>
+#include <cstring>
+using namespace std;
+
+int main() {
+ int t,n,m,i;
+ int a,c;
+ bool b[80000];
+ scanf("%d",&t);
+ while(t--){
+ memset(b,false,sizeof(b));
+ scanf("%d%d",&n,&m);
+ for(i=0;i<n*n;i++){
+ scanf("%d",&a);
+ b[a+10000]=true;
+ }
+ for(i=0;i<m;i++){
+ scanf("%d",&c);
+ if(b[c+10000])
+ printf("true\n");
+ else
+ printf("false\n");
+ }
+ }
+ return 0;
+}
+
+[/cpp]

@@ -1,0 +1,218 @@
+---
+author: lufo
+comments: true
+date: 2013-11-03 15:37:43+00:00
+layout: post
+slug: 1010-zipper-%e4%bb%8e%e5%9b%9e%e6%ba%af%e6%b3%95%e5%88%b0%e5%8a%a8%e6%80%81%e8%a7%84%e5%88%92-%e4%b8%80%e9%81%93%e5%9d%91%e4%ba%86%e6%88%91%e4%b8%80%e4%b8%aa%e5%a4%9a%e6%9c%88
+title: 1010. Zipper 从回溯法到动态规划——一道坑了我一个多月的题
+wordpress_id: 91
+categories:
+- 编程
+---
+
+这题和我还颇有渊源，一个多月前第一节数据结构实验课我不长心看错了题，于是做了这个，结果可想而知，做了两节课都是WA，今天哥终于把这丫的给搞掉了！看题：
+
+
+<blockquote>
+
+> 
+> # Constraints
+> 
+> 
+Time Limit: 1 secs, Memory Limit: 32 MB
+
+> 
+> # Description
+> 
+> 
+Given three strings, you are to determine whether the third string can be formed by combining the characters in the first two strings. The first two strings can be mixed arbitrarily, but each must stay in its original order. For example, consider forming "tcraete" from "cat" and "tree": String A: cat String B: tree String C: tcraete As you can see, we can form the third string by alternating characters from the two strings. As a second example, consider forming "catrtee" from "cat" and "tree": String A: cat String B: tree String C: catrtee Finally, notice that it is impossible to form "cttaree" from "cat" and "tree".
+
+> 
+> # Input
+> 
+> 
+The first line of input contains a single positive integer from 1 through 1000. It represents the number of data sets to follow. The processing for each data set is identical. The data sets appear on the following lines, one data set per line. For each data set, the line of input consists of three strings, separated by a single space. All strings are composed of upper and lower case letters only. The length of the third string is always the sum of the lengths of the first two strings. The first two strings will have lengths between 1 and 200 characters, inclusive.
+
+> 
+> # Output
+> 
+> 
+For each data set, print: Data set n: yes if the third string can be formed from the first two, or Data set n: no if it cannot. Of course n should be replaced by the data set number. See the sample output below for an example.
+
+> 
+> # Sample Input
+> 
+> 
+
+>     
+>     3
+>     cat tree tcraete
+>     cat tree catrtee
+>     cat tree cttaree
+> 
+> 
+
+> 
+> # Sample Output
+> 
+> 
+
+>     
+>     Data set 1: yes
+>     Data set 2: yes
+>     Data set 3: no
+> 
+> 
+</blockquote>
+
+
+首先想到的是回溯法，从s3中减去s1，余下的与s2比较，结果可想而知：TLE，下面是回溯法代码：
+
+[cpp]
+
+#include <iostream>
+#include <cstring>
+using namespace std;
+
+bool ok = false;
+
+void judge(char s1[],char s2[],char s3[],int address,int begin) {
+ int i,j,k;
+ char temp;
+ for(i = begin;i<strlen(s3)&&address<strlen(s1);i++){
+ if(s3[i]==s1[address]){
+ temp = s3[i];
+ s3[i] = '0';
+ if(address==strlen(s1)-1){
+ for(j = 0,k=0;j<strlen(s3);j++,k++){
+ while(s3[j]=='0')
+ j++;
+ if(s3[j]!=s2[k])
+ break;
+ if(j==strlen(s3)-1){
+ ok = true;
+ return;
+ }
+ }
+ }
+ judge(s1,s2,s3,address+1,i+1);
+ if(ok)
+ return;
+ s3[i] = temp;
+ }
+}
+}
+
+int main() {
+ char s1[201],s2[201],s3[401];
+ int n,i;
+ cin>>n;
+ for(i = 0;i<n;i++){
+ cin>>s1>>s2>>s3;
+ judge(s1,s2,s3,0,0);
+ if(ok)
+ cout<<"Data set "<<i+1<<": yes"<<endl;
+ else
+ cout<<"Data set "<<i+1<<": no"<<endl;
+ ok = false;
+ }
+ return 0;
+}
+
+[/cpp]
+
+不过用回溯法的话剪枝据说可以过，但我练回溯法都是自学的，剪枝什么的以后再试。然后我有想出递归的方法，虽然明知依然会TLE，但还是交了下：
+
+[cpp]
+
+#include <iostream>
+#include <cstring>
+using namespace std;
+
+bool judge(int i, int j, char s1[], char s2[], char s3[]) {
+ int n = 0;
+ if (i == 0) {
+ for (n = 0; n < j; n++) {
+ if (s2[n] != s3[n])
+ return false;
+ }
+ return true;
+ } else if (j == 0) {
+ for (n = 0; n < i; n++) {
+ if (s1[n] != s3[n])
+ return false;
+ }
+ return true;
+ } else {
+ return (judge(i - 1, j, s1, s2, s3) && s1[i - 1] == s3[i + j - 1])
+ || (judge(i, j - 1, s1, s2, s3) && s2[j - 1] == s3[i + j - 1]);
+ }
+}
+
+int main() {
+ char s1[201], s2[201], s3[401];
+ int n, i;
+ cin >> n;
+ for (i = 0; i < n; i++) {
+ cin >> s1 >> s2 >> s3;
+ if (judge(strlen(s1), strlen(s2), s1, s2, s3))
+ cout << "Data set " << i + 1 << ": yes" << endl;
+ else
+ cout << "Data set " << i + 1 << ": no" << endl;
+ }
+ return 0;
+}
+
+[/cpp]
+
+要想过自然得动态规划了，又改了下代码，废了九牛二虎之力终于过了\(╯-╰)/
+
+[cpp]
+
+#include <iostream>
+#include <cstring>
+using namespace std;
+
+int main() {
+ char s1[201], s2[201], s3[401];
+ int n, i, k, l, m;
+ cin >> n;
+ for (i = 0; i < n; i++) {
+ cin >> s1 >> s2 >> s3;
+ int len1 = strlen(s1), len2 = strlen(s2);
+ bool judge[len1 + 1][len2 + 1];
+ for (k = 0; k <= len1; k++)
+ for (l = 0; l <= len2; l++) {
+ if (k == 0) {
+ judge[k][l] = true;
+ for (m = 0; m < l; m++) {
+ if (s2[m] != s3[m]) {
+ judge[k][l] = false;
+ break;
+ }
+ }
+ }
+ if (l == 0) {
+ judge[k][l] = true;
+ for (m = 0; m < k; m++) {
+ if (s1[m] != s3[m]) {
+ judge[k][l] = false;
+ break;
+ }
+ }
+ }
+ if (k > 0 && l > 0)
+ judge[k][l] =
+ (judge[k - 1][l] && s1[k - 1] == s3[k + l - 1])
+ || (judge[k][l - 1]
+ && s2[l - 1] == s3[k + l - 1]);
+ }
+ if (judge[len1][len2])
+ cout << "Data set " << i + 1 << ": yes" << endl;
+ else
+ cout << "Data set " << i + 1 << ": no" << endl;
+ }
+ return 0;
+}
+
+[/cpp]

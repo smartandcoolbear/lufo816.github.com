@@ -1,0 +1,13 @@
+---
+author: lufo
+comments: true
+date: 2013-10-22 13:03:11+00:00
+layout: post
+slug: '%e6%80%8e%e6%a0%b7%e6%89%be%e5%9b%9e%e8%a2%ab%e6%92%a4%e9%94%80%e7%9a%84%e5%86%85%e5%ae%b9'
+title: 怎样找回被撤销的内容
+wordpress_id: 47
+categories:
+- 小Tips
+---
+
+大家都知道ctrl+z是撤销，但不少人有这样的经历：按下ctrl+z后发现很多本想保留的内容被撤销，刚刚我就遇到了这样的情况，简单查了一下，发现了答案：**ctrl+y**。在大多数文本编辑器里都管用，至少wordpress里是管用的。希望能帮到你。
