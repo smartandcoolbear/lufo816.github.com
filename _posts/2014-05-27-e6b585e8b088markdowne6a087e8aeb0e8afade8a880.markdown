@@ -1,0 +1,47 @@
+---
+author: lufo
+comments: true
+date: 2014-05-27 11:03:43+00:00
+layout: post
+slug: '%e6%b5%85%e8%b0%88markdown%e6%a0%87%e8%ae%b0%e8%af%ad%e8%a8%80'
+title: 浅谈markdown标记语言
+wordpress_id: 218
+categories:
+- 人文
+- 编程
+---
+
+每次写实验报告都要打开word或open office，word还勉强说得过去，open office简直是灾难，各种缩进按钮傻傻分不清楚，插入图片也是非常麻烦。于是想学下LaTex，早闻LaTex大名，也有料到它学习成本很高，但看了几篇评论后，果断放弃LaTex转投markdown。
+
+
+
+
+
+先分析一下这两个东西的特点：LaTex是非常专业的文本编辑系统，排版样式极多，且对数学公式和各种符号的支持很好，同时学习成本也很高，所以一般都是专业从事报纸杂志排版工作的人或理工专业写论文的时候使用。markdown特点就两个字：简单。**markdown的目标是让人们从复杂的排版中解脱出来，它能让人的双手从鼠标中解放出来，只专注于内容，用一些简单的符号标记完成那写简单必须的排版。**所以对于一般人使用，markdown足矣。
+
+
+
+
+
+markdown的特点就是简单易学，十分钟能学会毫不夸张，[这里](https://gitcafe.com/riku/Markdown-Syntax-CN/blob/master/syntax.md)是一份简易的markdown教程，真的非常简单，通过十几分钟的学习就能掌握一种很酷很方便的书写方式，真的很超值有没有。昨天晚上我才接触markdown，今天就已经用它写了一份实验报告，现在正yongmarkdown写这篇文章。下面讲几个初学markdown会遇到的问题。
+
+
+
+
+
+首先说一下markdown用到的编辑器，windows下我使用的是[MarkdownPad](http://markdownpad.com/)，有免费版，付费版有更多功能。Linux下[ReText](http://sourceforge.net/projects/retext/)据说不错，因为这两天一直在windows下所以还没装。
+
+
+
+
+
+再说下转PDF的问题，付费版MarkdownPad可以直接转。我现在使用的方法是先用MarkdownPad转成html，在chrome中打开然后按ctrl+P打印，就可以选择保存为PDF了，目前来看效果很好。如果你有更好的方法，欢迎留言。
+
+
+
+
+
+总之，markdown非常高效易学,just enjoy it!
+
+
+

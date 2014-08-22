@@ -1,0 +1,192 @@
+---
+author: lufo
+comments: true
+date: 2014-04-06 15:38:18+00:00
+layout: post
+slug: '187'
+title: pintos实现线程优先级调度
+wordpress_id: 187
+categories:
+- OS
+---
+
+
+
+
+
+
+
+
+
+	
+  1. 
+
+
+**实验内容：**
+
+
+
+
+实现pintos线程的优先级调度。
+
+
+
+
+	
+  2. 
+
+
+**实验步骤：**
+
+
+
+
+
+
+	
+  * 
+
+
+开始时make check结果如下图：
+
+
+
+
+
+[![week2_pic1](http://bcs.duapp.com/lufo816/blog/201404/week2_pic1.png)](http://bcs.duapp.com/lufo816/blog/201404/week2_pic1.png)
+
+
+
+	
+  * 
+
+
+本次试验要让alarm-priority这个测试pass掉。首先按照实验文档修改线程sleep时把CPU时间交出的机制，大致原理为：原本pintos是在while循环里调用thread_yield ()把时间交给CPU，但这个循环在n线程睡眠的状态中一直执行，所以实际上是一直占用着CPU时间的，知道sleep的时间结束，这个线程继续执行，依然占用CPU时间。我们的实现为线程sleep后标记为block状态然后把时间还给操作系统，同时记录下i线程要睡眠的时间，每个周期都比较一下有没有到达线程应该睡眠的时间，如果到了，则把CPU时间还给这个线程。这一步为通过测试用例打下了基础。
+
+
+
+
+	
+  * 
+
+
+然后观察thread_unblock (struct thread *t) 这个函数，发现它直接把线程加到ready队列最后面，即用FCFS的方式进行调度。现在要改为根据优先级调度，查看thread.c发现priority成员代表线程优先级，默认为31,这个值越大优先级越高。那具体怎么实现那？
+
+
+
+
+	
+  * 
+
+
+进入list.c，发现里面有一个void list_insert_ordered (struct list *list, struct list_elem *elem,list_less_func *less, void *aux)函数，可以自动根据优先级将线程插入队列，所以我们只要调用这个函数就可以了。
+
+
+
+
+	
+  * 
+
+
+这个函数有一个参数为一个定义返回值为bool，参数为两个list_elem指针和一个空指针的函数指针，需要自己实现，其实这个函数的作用就是比较两个list_elem所代表的线程优先级的大小。
+
+
+
+
+	
+  * 
+
+
+现在问题是怎么根据list_elem指针得到它所代表的线程那？发现list.h里有一个宏定义list_entry()可以做到，所以自己写出的比较函数如下：
+
+
+
+
+
+[![week2_pic6](http://bcs.duapp.com/lufo816/blog/201404/week2_pic6.png)](http://bcs.duapp.com/lufo816/blog/201404/week2_pic6.png)
+
+
+
+	
+  * 
+
+
+下面修改thread_unblock即可：
+
+
+
+
+
+[![week2_pic3](http://bcs.duapp.com/lufo816/blog/201404/week2_pic3.png)](http://bcs.duapp.com/lufo816/blog/201404/week2_pic3.png)
+
+
+
+	
+  * 
+
+
+这时make check发现依然不能pass，找到thread.c里面其他调用list_push_back()的函数改为list_insert_ordered()即可：
+
+
+
+
+
+[![week2_pic4](http://bcs.duapp.com/lufo816/blog/201404/week2_pic4.png)](http://bcs.duapp.com/lufo816/blog/201404/week2_pic4.png)
+
+[![week2_pic5](http://bcs.duapp.com/lufo816/blog/201404/week2_pic5.png)](http://bcs.duapp.com/lufo816/blog/201404/week2_pic5.png)
+
+
+
+	
+  * 
+
+
+这时就pass了，最后结果如下：[![week2_pic2](http://bcs.duapp.com/lufo816/blog/201404/week2_pic2.png)](http://bcs.duapp.com/lufo816/blog/201404/week2_pic2.png)
+
+
+
+
+
+
+
+
+
+	
+  3. 
+
+
+**实验心得：**
+
+
+
+
+
+
+	
+  * 
+
+
+要对pintos整个文件结构有所了解，知道每个文件夹，每个文件是做什么用的，这样才能快速找到问题所在。
+
+
+
+
+	
+  * 
+
+
+要仔细阅读每个可能用到的函数的注释，了解它的用法，以便最快解决问题。
+
+
+
+
+	
+  * 
+
+
+要巩固C语言基础，如函数指针，宏定义什么的都忘了不少，要多加复习。
+
+
+
+
+
