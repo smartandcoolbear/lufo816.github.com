@@ -6,7 +6,7 @@ layout: post
 slug: 1028-hanoi-tower-sequence
 title: 1028. Hanoi Tower Sequence
 wordpress_id: 86
-categories:
+tags:
 - 编程
 ---
 

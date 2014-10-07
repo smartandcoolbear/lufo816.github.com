@@ -6,7 +6,7 @@ layout: post
 slug: '%e7%ba%b8%e4%b9%a6%e4%bc%9a%e6%b6%88%e5%a4%b1%e5%90%97%ef%bc%9f'
 title: 纸书会消失吗？
 wordpress_id: 161
-categories:
+tags:
 - 产品
 ---
 

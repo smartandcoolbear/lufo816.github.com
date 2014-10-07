@@ -6,7 +6,7 @@ layout: post
 slug: 1342-%e5%bc%80%e5%bf%83%e7%9a%84%e9%87%91%e6%98%8e-01%e8%83%8c%e5%8c%85%e9%97%ae%e9%a2%98
 title: 1342. 开心的金明 01背包问题
 wordpress_id: 123
-categories:
+tags:
 - 编程
 ---
 

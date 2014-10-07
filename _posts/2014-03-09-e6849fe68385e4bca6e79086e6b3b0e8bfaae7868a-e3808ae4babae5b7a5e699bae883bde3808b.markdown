@@ -6,7 +6,7 @@ layout: post
 slug: '%e6%84%9f%e6%83%85%e4%bc%a6%e7%90%86%e6%b3%b0%e8%bf%aa%e7%86%8a-%e3%80%8a%e4%ba%ba%e5%b7%a5%e6%99%ba%e8%83%bd%e3%80%8b'
 title: 感情伦理泰迪熊——《人工智能》
 wordpress_id: 169
-categories:
+tags:
 - 人文
 ---
 

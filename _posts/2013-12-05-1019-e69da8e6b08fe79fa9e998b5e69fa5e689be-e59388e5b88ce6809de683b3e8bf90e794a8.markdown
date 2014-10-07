@@ -6,7 +6,7 @@ layout: post
 slug: 1019-%e6%9d%a8%e6%b0%8f%e7%9f%a9%e9%98%b5%e6%9f%a5%e6%89%be-%e5%93%88%e5%b8%8c%e6%80%9d%e6%83%b3%e8%bf%90%e7%94%a8
 title: 1019. 杨氏矩阵查找——哈希思想运用
 wordpress_id: 120
-categories:
+tags:
 - 编程
 ---
 

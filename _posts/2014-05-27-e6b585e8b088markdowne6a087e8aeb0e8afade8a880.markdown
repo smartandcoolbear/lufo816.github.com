@@ -6,7 +6,7 @@ layout: post
 slug: '%e6%b5%85%e8%b0%88markdown%e6%a0%87%e8%ae%b0%e8%af%ad%e8%a8%80'
 title: 浅谈markdown标记语言
 wordpress_id: 218
-categories:
+tags:
 - 人文
 - 编程
 ---

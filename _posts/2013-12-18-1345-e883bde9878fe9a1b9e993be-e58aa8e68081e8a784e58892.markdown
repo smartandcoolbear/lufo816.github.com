@@ -6,7 +6,7 @@ layout: post
 slug: 1345-%e8%83%bd%e9%87%8f%e9%a1%b9%e9%93%be-%e5%8a%a8%e6%80%81%e8%a7%84%e5%88%92
 title: 1345. 能量项链 动态规划
 wordpress_id: 128
-categories:
+tags:
 - 编程
 ---
 

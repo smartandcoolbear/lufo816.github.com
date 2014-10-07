@@ -6,7 +6,7 @@ layout: post
 slug: '%e5%b0%8f%e7%b1%b3%e8%bf%98%e6%98%af%e9%ad%85%e6%97%8f'
 title: 小米还是魅族
 wordpress_id: 61
-categories:
+tags:
 - 产品
 ---
 

@@ -6,7 +6,7 @@ layout: post
 slug: 1010-zipper-%e4%bb%8e%e5%9b%9e%e6%ba%af%e6%b3%95%e5%88%b0%e5%8a%a8%e6%80%81%e8%a7%84%e5%88%92-%e4%b8%80%e9%81%93%e5%9d%91%e4%ba%86%e6%88%91%e4%b8%80%e4%b8%aa%e5%a4%9a%e6%9c%88
 title: 1010. Zipper 从回溯法到动态规划——一道坑了我一个多月的题
 wordpress_id: 91
-categories:
+tags:
 - 编程
 ---
 

@@ -6,7 +6,7 @@ layout: post
 slug: 1282-computer-game-kmp%e7%ae%97%e6%b3%95
 title: 1282. Computer Game KMP算法
 wordpress_id: 111
-categories:
+tags:
 - 编程
 ---
 

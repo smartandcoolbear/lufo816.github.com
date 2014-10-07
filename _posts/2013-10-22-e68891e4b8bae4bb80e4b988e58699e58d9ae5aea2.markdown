@@ -6,7 +6,7 @@ layout: post
 slug: '%e6%88%91%e4%b8%ba%e4%bb%80%e4%b9%88%e5%86%99%e5%8d%9a%e5%ae%a2'
 title: 我为什么写博客
 wordpress_id: 41
-categories:
+tags:
 - 人文
 ---
 

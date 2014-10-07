@@ -6,7 +6,7 @@ layout: post
 slug: '%e9%bb%91%e6%9a%97%e4%b8%ad%e8%8b%9f%e6%b4%bb-%e3%80%8a%e5%b7%b4%e5%88%ab%e5%a1%94%e3%80%8b%e5%bd%b1%e8%af%84'
 title: 黑暗中苟活——《巴别塔》影评
 wordpress_id: 132
-categories:
+tags:
 - 人文
 ---
 

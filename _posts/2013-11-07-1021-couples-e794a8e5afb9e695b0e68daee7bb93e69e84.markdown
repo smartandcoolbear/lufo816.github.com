@@ -6,7 +6,7 @@ layout: post
 slug: 1021-couples-%e7%94%a8%e5%af%b9%e6%95%b0%e6%8d%ae%e7%bb%93%e6%9e%84
 title: 1021. Couples 用对数据结构
 wordpress_id: 98
-categories:
+tags:
 - 编程
 ---
 

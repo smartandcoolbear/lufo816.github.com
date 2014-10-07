@@ -6,7 +6,7 @@ layout: post
 slug: '%e6%80%8e%e6%a0%b7%e6%89%be%e5%9b%9e%e8%a2%ab%e6%92%a4%e9%94%80%e7%9a%84%e5%86%85%e5%ae%b9'
 title: 怎样找回被撤销的内容
 wordpress_id: 47
-categories:
+tags:
 - 小Tips
 ---
 

@@ -5,8 +5,9 @@ date: 2014-06-08 11:03:43+00:00
 layout: post
 title: Bye Bye Beautiful
 wordpress_id: 228
-categories:
-- 人文
+tags:
+- culture
+- daily
 ---
 
 <p>先和BAE说拜拜，前几天百度发来一短信，说有未支付账单，一看是用BAE的服务器搭建的博客现在要付费了。本来访问速度就不咋地，还要付费，分分钟受不了，前一段看了下LOFTER整个风格都挺喜欢的，所以我暂时就在这儿写博客啦！</p> 

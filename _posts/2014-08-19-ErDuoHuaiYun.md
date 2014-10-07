@@ -5,8 +5,10 @@ date: 2014-08-19 11:03:43+00:00
 layout: post
 title: 俗称耳朵怀孕
 wordpress_id: 238
-categories:
-- 人文
+tags:
+- music
+- daily
+- culture
 ---
 
 <p>前一段看到这么一个问题：「为什么有时听音乐时会头皮发麻？」，我们敬爱的张百万姐姐言简意赅的回答：「类似让人操爽的生理现象，耳朵怀孕。」。</p> 

@@ -6,7 +6,7 @@ layout: post
 slug: win7%e4%b8%8eubuntu%e5%8f%8c%e7%b3%bb%e7%bb%9f%e6%97%b6%e5%8d%b8%e8%bd%bdubuntu%e7%9a%84%e6%96%b9%e6%b3%95%ef%bc%88%e8%bd%ac%ef%bc%89
 title: Win7与Ubuntu双系统时卸载Ubuntu的方法（转）
 wordpress_id: 159
-categories:
+tags:
 - 小Tips
 ---
 

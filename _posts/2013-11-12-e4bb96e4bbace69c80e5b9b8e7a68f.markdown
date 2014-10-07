@@ -6,7 +6,7 @@ layout: post
 slug: '%e4%bb%96%e4%bb%ac%e6%9c%80%e5%b9%b8%e7%a6%8f'
 title: 他们最幸福
 wordpress_id: 100
-categories:
+tags:
 - 人文
 ---
 

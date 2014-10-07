@@ -6,7 +6,7 @@ layout: post
 slug: '%e5%a6%82%e4%bd%95%e5%86%99%e4%b8%80%e4%b8%aa%e7%88%ac%e8%99%ab'
 title: 如何写一个爬虫
 wordpress_id: 164
-categories:
+tags:
 - 编程
 ---
 

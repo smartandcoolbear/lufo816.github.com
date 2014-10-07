@@ -6,7 +6,7 @@ layout: post
 slug: '%e5%af%bb%e6%89%be%e7%ac%ack%e5%a4%a7%e6%95%b0-%e5%a4%84%e7%90%86%e5%a4%a7%e9%87%8f%e9%87%8d%e5%a4%8d%e6%95%b0%e6%8d%ae'
 title: 寻找第k大数——处理大量重复数据
 wordpress_id: 118
-categories:
+tags:
 - 编程
 ---
 

@@ -6,7 +6,7 @@ layout: post
 slug: 1006-team-rankings-%e7%86%9f%e6%82%89stl
 title: 1006. Team Rankings 熟悉STL
 wordpress_id: 107
-categories:
+tags:
 - 编程
 ---
 

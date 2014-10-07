@@ -6,7 +6,7 @@ layout: post
 slug: '%e7%94%a8%e4%ba%8e%e5%b0%86%e6%91%84%e5%83%8f%e5%a4%b4%e5%9b%be%e5%83%8f%e8%bd%ac%e6%8d%a2%e4%b8%baascii%e5%ad%97%e7%ac%a6%e8%a1%a8%e7%a4%ba%e7%9a%84%e8%84%9a%e6%9c%ac'
 title: 用于将摄像头图像转换为ASCII字符表示的脚本
 wordpress_id: 208
-categories:
+tags:
 - 编程
 ---
 

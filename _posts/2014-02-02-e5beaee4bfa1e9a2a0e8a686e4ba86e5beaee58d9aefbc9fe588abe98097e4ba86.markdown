@@ -6,7 +6,7 @@ layout: post
 slug: '%e5%be%ae%e4%bf%a1%e9%a2%a0%e8%a6%86%e4%ba%86%e5%be%ae%e5%8d%9a%ef%bc%9f%e5%88%ab%e9%80%97%e4%ba%86'
 title: 微信颠覆了微博？别逗了
 wordpress_id: 136
-categories:
+tags:
 - 产品
 ---
 

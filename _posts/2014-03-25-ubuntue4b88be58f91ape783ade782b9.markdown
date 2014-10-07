@@ -6,7 +6,7 @@ layout: post
 slug: ubuntu%e4%b8%8b%e5%8f%91ap%e7%83%ad%e7%82%b9
 title: ubuntu下发AP热点
 wordpress_id: 179
-categories:
+tags:
 - 小Tips
 ---
 

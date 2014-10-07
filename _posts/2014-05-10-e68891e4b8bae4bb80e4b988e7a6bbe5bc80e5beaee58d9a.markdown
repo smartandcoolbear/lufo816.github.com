@@ -6,7 +6,7 @@ layout: post
 slug: '%e6%88%91%e4%b8%ba%e4%bb%80%e4%b9%88%e7%a6%bb%e5%bc%80%e5%be%ae%e5%8d%9a'
 title: 我为什么离开微博
 wordpress_id: 202
-categories:
+tags:
 - 产品
 ---
 

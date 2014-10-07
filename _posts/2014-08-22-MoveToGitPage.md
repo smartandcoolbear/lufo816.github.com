@@ -2,7 +2,8 @@
 title: 不折腾会死，Blog迁到Github了！
 layout: post
 tags:
-  - 教程
+  - web
+  - skill
 ---
 
 ![](/media/files/2014/08/22.jpg) 
