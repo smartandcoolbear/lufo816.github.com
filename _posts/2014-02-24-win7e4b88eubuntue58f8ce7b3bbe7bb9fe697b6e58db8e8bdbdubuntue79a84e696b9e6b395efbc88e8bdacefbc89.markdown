@@ -7,12 +7,13 @@ slug: win7%e4%b8%8eubuntu%e5%8f%8c%e7%b3%bb%e7%bb%9f%e6%97%b6%e5%8d%b8%e8%bd%bdu
 title: Win7与Ubuntu双系统时卸载Ubuntu的方法（转）
 wordpress_id: 159
 tags:
-- 小Tips
+- skill
+- linux
 ---
 
 转自：http://www.linuxidc.com/Linux/2010-03/25129.htm
 
-1. 下载[MBRFix](http://www.linuxidc.com/Linux/2007-11/8785.htm)工具，放在c盘，利用命令提示符，进入软件所在目录，cd c:\mbrfix    （cd后面一个空格）
+1. 下载[MBRFix](http://www.linuxidc.com/Linux/2007-11/8785.htm)工具，放在c盘，利用命令提示符，进入软件所在目录，cd c:\mbrfix    （cd后面一个空格）
 
 2.输入 MBRFix /drive 0 fixmbr /yes
 

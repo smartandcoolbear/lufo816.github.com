@@ -7,7 +7,7 @@ slug: 1218-%e7%ba%aa%e5%bf%b5%e9%82%ae%e7%a5%a8-%e5%b0%bd%e9%87%8f%e9%99%8d%e4%b
 title: 1218. 纪念邮票 尽量降低时间复杂度
 wordpress_id: 125
 tags:
-- 编程
+- algorithm
 ---
 
 <blockquote>
@@ -66,7 +66,7 @@ tags:
 > 
 
 > 
->  Copy sample input to clipboard
+>  Copy sample input to clipboard
 > 
 > 
 

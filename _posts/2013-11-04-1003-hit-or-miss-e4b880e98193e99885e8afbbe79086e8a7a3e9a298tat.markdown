@@ -7,7 +7,7 @@ slug: 1003-hit-or-miss-%e4%b8%80%e9%81%93%e9%98%85%e8%af%bb%e7%90%86%e8%a7%a3%e9
 title: 1003. Hit or Miss 一道阅读理解题TAT
 wordpress_id: 93
 tags:
-- 编程
+- algorithm
 ---
 
 <blockquote>

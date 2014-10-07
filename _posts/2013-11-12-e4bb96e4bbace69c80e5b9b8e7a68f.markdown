@@ -7,7 +7,8 @@ slug: '%e4%bb%96%e4%bb%ac%e6%9c%80%e5%b9%b8%e7%a6%8f'
 title: 他们最幸福
 wordpress_id: 100
 tags:
-- 人文
+- culture
+- daily
 ---
 
 今天和小伙伴冒雨去暨大看了山东老乡大冰的演讲，非常有趣非常精彩。

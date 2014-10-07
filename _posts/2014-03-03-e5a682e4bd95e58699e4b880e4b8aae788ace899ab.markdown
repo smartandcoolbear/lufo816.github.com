@@ -7,7 +7,8 @@ slug: '%e5%a6%82%e4%bd%95%e5%86%99%e4%b8%80%e4%b8%aa%e7%88%ac%e8%99%ab'
 title: 如何写一个爬虫
 wordpress_id: 164
 tags:
-- 编程
+- skill
+- python
 ---
 
 爬虫就是一个能抓取网页信息程序，用python的urllib2库可以轻松的抓取的网页信息，下面是一个简单的抓取贴吧的程序：

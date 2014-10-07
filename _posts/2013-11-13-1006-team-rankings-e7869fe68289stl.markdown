@@ -7,7 +7,7 @@ slug: 1006-team-rankings-%e7%86%9f%e6%82%89stl
 title: 1006. Team Rankings 熟悉STL
 wordpress_id: 107
 tags:
-- 编程
+- algorithm
 ---
 
 <blockquote>
@@ -28,7 +28,7 @@ The median ranking is computed as follows: Given any two rankings, for instance 
 
 Suppose there are 4 voters that have given the rankings: ABDCE, BACDE, ABCED and ACBDE. Consider two candidate median rankings ABCDE and CDEAB. The sum of distances from the ranking ABCDE to the four voted rankings is 1 + 1 + 1 + 1 = 4. We'll call this sum the value of the ranking ABCDE. The value of the ranking CDEAB is 7 + 7 + 7 + 5 = 26.
 
-It turns out that ABCDE is in fact the median ranking with a value of 4. 
+It turns out that ABCDE is in fact the median ranking with a value of 4. 
 
 > 
 > # Input
@@ -44,7 +44,7 @@ Output for each input set should be one line of the form:
 
 ranking is the median ranking with value value.
 
-Of course ranking should be replaced by the correct ranking and value with the correct value. If there is more than one median ranking, you should output the one which comes first alphabetically. 
+Of course ranking should be replaced by the correct ranking and value with the correct value. If there is more than one median ranking, you should output the one which comes first alphabetically. 
 
 > 
 > # Sample Input

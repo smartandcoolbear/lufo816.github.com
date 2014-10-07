@@ -7,7 +7,8 @@ slug: '%e8%87%b3%e5%86%af%e5%94%90'
 title: 至冯唐
 wordpress_id: 183
 tags:
-- 人文
+- culture
+- daily
 ---
 
 你丫毁了我的三观

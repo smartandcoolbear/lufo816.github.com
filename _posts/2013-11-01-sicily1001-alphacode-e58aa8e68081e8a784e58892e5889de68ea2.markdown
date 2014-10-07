@@ -7,7 +7,7 @@ slug: sicily1001-alphacode-%e5%8a%a8%e6%80%81%e8%a7%84%e5%88%92%e5%88%9d%e6%8e%a
 title: Sicily1001. Alphacode 动态规划初探
 wordpress_id: 81
 tags:
-- 编程
+- algorithm
 ---
 
 <blockquote>

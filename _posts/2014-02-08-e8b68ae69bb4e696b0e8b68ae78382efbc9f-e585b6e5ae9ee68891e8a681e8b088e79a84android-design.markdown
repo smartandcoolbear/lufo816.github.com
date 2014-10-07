@@ -7,7 +7,7 @@ slug: '%e8%b6%8a%e6%9b%b4%e6%96%b0%e8%b6%8a%e7%83%82%ef%bc%9f-%e5%85%b6%e5%ae%9e
 title: 越更新越烂!？——其实我要谈的是Android Design
 wordpress_id: 139
 tags:
-- 产品
+- product
 ---
 
 今天更新了下Fuubo，进去后简直怀疑这是不是官方版本，马上想好怎么吐槽了：Action Bar干着Tabs的活，刻意追求去掉Action Split Bar却弄了个其丑无比的刷新+发微博按钮在右下角，照片竟然改成单击返回，查看照片时上面的黑框竟然去不掉，你让处女座怎么办！……再看看豌豆荚上的评论，特摘几条如下：

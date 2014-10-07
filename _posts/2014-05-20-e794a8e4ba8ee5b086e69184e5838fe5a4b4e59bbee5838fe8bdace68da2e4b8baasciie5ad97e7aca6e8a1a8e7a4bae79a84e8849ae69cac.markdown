@@ -7,7 +7,8 @@ slug: '%e7%94%a8%e4%ba%8e%e5%b0%86%e6%91%84%e5%83%8f%e5%a4%b4%e5%9b%be%e5%83%8f%
 title: 用于将摄像头图像转换为ASCII字符表示的脚本
 wordpress_id: 208
 tags:
-- 编程
+- skill
+- python
 ---
 
 最近在github上发现了一个小项目，它能将摄像头截取到的图像用ASCII字符表示出来，项目地址：https://github.com/mustafaakin/terminal-webcam。

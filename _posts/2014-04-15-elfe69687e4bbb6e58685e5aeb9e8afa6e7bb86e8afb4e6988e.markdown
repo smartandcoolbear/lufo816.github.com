@@ -7,12 +7,13 @@ slug: elf%e6%96%87%e4%bb%b6%e5%86%85%e5%ae%b9%e8%af%a6%e7%bb%86%e8%af%b4%e6%98%8
 title: elf文件内容详细说明
 wordpress_id: 198
 tags:
-- OS
+- linux
+- skill
 ---
 
 ELF文件格式是一个开放标准，各种UNIX系统的可执行文件都采用ELF格式，它有三种不同的类型：可重定位的目标文件（Relocatable，或者Object File），可执行文件（Executable），共享库（Shared Object，或者Shared Library）。
 
-执行 arm-elf-readelf -a code.o > code_elfinfo可以从.o文件得到elfinfo文件，里面记录了elf文件的信息，ELF Header 描述了 elf 文件的基本信息,Section Header 描述了各个 section 的基本 信 息 , Program Header 描 述 各 个 segment 的 信 息 , 最 后 一 部 分 , 是从.rel.text 和.symtab 这两个 Section 中读出的信息,.rel.text 告诉链接器指令中的哪些地方需要做重定位,.symtab 是符号表。下面说一下各个 section 的具体信息。
+执行 arm-elf-readelf -a code.o > code_elfinfo可以从.o文件得到elfinfo文件，里面记录了elf文件的信息，ELF Header 描述了 elf 文件的基本信息,Section Header 描述了各个 section 的基本 信 息 , Program Header 描 述 各 个 segment 的 信 息 , 最 后 一 部 分 , 是从.rel.text 和.symtab 这两个 Section 中读出的信息,.rel.text 告诉链接器指令中的哪些地方需要做重定位,.symtab 是符号表。下面说一下各个 section 的具体信息。
 
 .text 存放指令,不可写,.data 存放在编译阶段(而非运行时)就能确定的数据,可读可写就是通常所说的静态存储区,赋了初值的全局变量和静态变量存放在这个域,常量也存放在这个区域,.rodata 是用来存放 const 变量的,不能写,通常,.rodata 会与.text 放在一个连续的内存空间中,.bss 段:定义而没有赋初值的或初值为 0 的全局变量和静态变量。.strtab 保存着程序中用到的符号的名字,.shstrtab 保存着各 Section 的名字以上两个均以 ‘ /0’结尾,.symtab 符号表,一般是变量、函数。
 

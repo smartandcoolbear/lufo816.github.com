@@ -7,7 +7,7 @@ slug: 1021-couples-%e7%94%a8%e5%af%b9%e6%95%b0%e6%8d%ae%e7%bb%93%e6%9e%84
 title: 1021. Couples 用对数据结构
 wordpress_id: 98
 tags:
-- 编程
+- algorithm
 ---
 
 <blockquote>
@@ -30,7 +30,7 @@ Can we remove all the couples out of the circle?
 > # Input
 > 
 > 
-There may be several test cases in the input file. In each case, the first line is an integer **N**(1 <= N <= 100000)----the number of couples. In the following N lines, each line contains two integers ---- the numbers of each couple.
+There may be several test cases in the input file. In each case, the first line is an integer **N**(1 <= N <= 100000)----the number of couples. In the following N lines, each line contains two integers ---- the numbers of each couple.
 N = 0 indicates the end of the input.
 
 > 

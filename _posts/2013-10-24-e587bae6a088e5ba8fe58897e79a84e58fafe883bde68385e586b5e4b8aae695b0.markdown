@@ -7,7 +7,7 @@ slug: '%e5%87%ba%e6%a0%88%e5%ba%8f%e5%88%97%e7%9a%84%e5%8f%af%e8%83%bd%e6%83%85%
 title: 出栈序列的可能情况个数
 wordpress_id: 50
 tags:
-- 编程
+- algorithm
 ---
 
 原题目：

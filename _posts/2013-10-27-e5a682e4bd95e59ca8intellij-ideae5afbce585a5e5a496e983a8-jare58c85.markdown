@@ -7,7 +7,8 @@ slug: '%e5%a6%82%e4%bd%95%e5%9c%a8intellij-idea%e5%af%bc%e5%85%a5%e5%a4%96%e9%83
 title: 如何在IntelliJ IDEA导入外部.jar包
 wordpress_id: 68
 tags:
-- 小Tips
+- skill
+- android
 ---
 
 最近研究百度地图API，使用百度地图API需要导入百度提供的.jar包，查了一下IntelliJ IDEA的导入方法：

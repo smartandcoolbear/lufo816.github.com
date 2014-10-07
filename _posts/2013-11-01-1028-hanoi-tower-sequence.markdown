@@ -7,7 +7,7 @@ slug: 1028-hanoi-tower-sequence
 title: 1028. Hanoi Tower Sequence
 wordpress_id: 86
 tags:
-- 编程
+- algorithm
 ---
 
 <blockquote>
@@ -34,8 +34,8 @@ Given an integer p, your task is to find out the pth element of this sequence.
 > # Input
 > 
 > 
-The first line of the input file is **T**, the number of test cases.
-Each test case contains one integer **p** (1<=p<10^100).
+The first line of the input file is **T**, the number of test cases.
+Each test case contains one integer **p** (1<=p<10^100).
 
 > 
 > # Output

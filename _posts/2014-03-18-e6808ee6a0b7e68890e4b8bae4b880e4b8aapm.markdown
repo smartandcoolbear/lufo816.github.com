@@ -7,7 +7,7 @@ slug: '%e6%80%8e%e6%a0%b7%e6%88%90%e4%b8%ba%e4%b8%80%e4%b8%aapm'
 title: 怎样成为一个PM
 wordpress_id: 175
 tags:
-- 产品
+- product
 ---
 
 **首先要知道产品经理做什么：**

@@ -7,7 +7,7 @@ slug: '187'
 title: pintos实现线程优先级调度
 wordpress_id: 187
 tags:
-- OS
+- linux
 ---
 
 

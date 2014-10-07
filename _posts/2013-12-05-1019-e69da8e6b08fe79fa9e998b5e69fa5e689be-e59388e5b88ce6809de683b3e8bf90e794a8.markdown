@@ -7,7 +7,7 @@ slug: 1019-%e6%9d%a8%e6%b0%8f%e7%9f%a9%e9%98%b5%e6%9f%a5%e6%89%be-%e5%93%88%e5%b
 title: 1019. 杨氏矩阵查找——哈希思想运用
 wordpress_id: 120
 tags:
-- 编程
+- algorithm
 ---
 
 <blockquote>
@@ -66,7 +66,7 @@ tags:
 > 
 
 > 
->  Copy sample input to clipboard
+>  Copy sample input to clipboard
 > 
 > 
 

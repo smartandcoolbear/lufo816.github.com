@@ -7,7 +7,7 @@ slug: 1002-anti-prime-sequences-%e5%9b%9e%e6%ba%af%e6%b3%95%e5%88%9d%e6%8e%a2
 title: 1002. Anti-prime Sequences 回溯法初探
 wordpress_id: 88
 tags:
-- 编程
+- algorithm
 ---
 
 <blockquote>
