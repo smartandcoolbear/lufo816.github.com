@@ -2,7 +2,8 @@
 title: python脚本爬下载链接
 layout: post
 tags:
-  - algorithm
+  - python
+  - skill
 ---
 
 ![](/media/files/2014/10/11_3.jpg)
