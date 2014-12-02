@@ -9,6 +9,6 @@ layout: page
 
 [我爱自然语言处理](http://www.52nlp.cn/)
 
-想出现在这里请联系我: )
+[混沌的云](http://blog.zerob13.in/)
 
-*# sort*
+想出现在这里请联系我: )
