@@ -164,4 +164,69 @@ tags:
       return ans;
     }
 
+**筛法求素数**
 
+    #define MAXPRIME 1000000
+    int prime[MAXPRIME];
+    int testPrime(int n, int i) {
+        int k = n;
+        for (int j = 0; j < i; j++) {
+            if (prime[j] > k)
+                break;
+            if (n % prime[j] == 0)
+                return 0;
+            k = n / prime[j];
+        }
+        return 1;
+    }
+    void getPrime() {
+        int i = 1;
+        prime[0] = 2;
+        for (int n = 3; n < MAXPRIME; n++) {
+            if (testPrime(n, i)) {
+                prime[i] = n;
+                i++;
+                if (i >= MAXPRIME)
+                    break;
+            }
+        }
+    }
+
+**全排列**
+
+    while (next_permutation(str.begin(), str.end()))
+    {
+        cout << str << endl;
+    }
+
+**康拓展开**
+
+排列与整数之间的映射
+
+    int fac[] = { 1, 1, 2, 6, 24, 120, 720, 5040, 40320, 362880 }; //阶乘
+    int cantor(int *s, int n) {
+        int num = 0;
+        for (int i = 0; i < n - 1; i++) {
+            int tmp = 0;
+            for (int j = i + 1; j < n; j++)
+                if (s[j] < s[i])
+                    tmp++;
+            num += fac[n - i - 1] * tmp;
+        }
+        return num;
+    }
+
+    void _cantor(int *s, int n, int x) {
+        bool tmp[n + 1];
+        memset(tmp, 0, sizeof(tmp));
+        for (int i = n - 1; i >= 0; i--) {
+            int k = x / fac[i];
+            x %= fac[i];
+            int j = 1;
+            for (int sum = 0; sum < k || tmp[j]; j++)
+                if (!tmp[j])
+                    sum++;
+            s[n - 1 - i] = j;
+            tmp[j] = 1;
+        }
+    }
