@@ -546,7 +546,6 @@ Dijkstra，求单源、无负权的最短路。
           }
       visit[node] = 2;
     }
-
     void dfs(vector<vector<int> >&graph)
     {
       int n = graph.size();
@@ -590,7 +589,6 @@ Dijkstra，求单源、无负权的最短路。
         visit[node] = 2;
         tuopu.push(node);
     }
-     
     void dfs(vector<vector<int> >&graph)
     {
         int n = graph.size();
