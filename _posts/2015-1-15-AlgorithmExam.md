@@ -1,5 +1,5 @@
 ---
-title: 算法设计期末考资料
+title: 算法导论期末考资料
 layout: post
 tags:
   - algorithm
@@ -229,4 +229,71 @@ tags:
             s[n - 1 - i] = j;
             tmp[j] = 1;
         }
+    }
+
+**最大连续子序列**
+
+    int maxsum(int a[n])    
+    {  
+        int max=a[0];       //全负情况，返回最大数  
+        int sum=0;  
+        for(int j=0;j<n;j++)  
+        {  
+            if(sum>=0)     //如果加上某个元素，sum>=0的话，就加  
+                sum+=a[j];  
+            else     
+                sum=a[j];  //如果加上某个元素，sum<0了，就不加  
+            if(sum>max)  
+                max=sum;  
+        }  
+        return max;  
+    }  
+
+**最长公共子序列**
+
+c[i,j]=0 if i=0 or j=0
+
+c[i,j]=c[i-1,j-1] if a[i]=b[j]
+
+c[i,j]=max(c[i,j-1],c[i-1,j]) if a[i]!=b[j]
+
+**最长递增子序列**
+
+    int BinarySearch(int *array, int value, int nLength)
+    {
+        int begin = 0;
+        int end = nLength - 1;
+        while(begin <= end)
+        {
+            int mid = begin + (end - begin) / 2;
+            if(array[mid] == value)
+                return mid;
+            else if(array[mid] > value)
+                end = mid - 1;
+            else
+                begin = mid + 1;
+        }
+        return begin;
+    }
+
+    int LIS_DP_NlogN(int *array, int nLength)
+    {
+        int B[nLength];
+        int nLISLen = 1;
+        B[0] = array[0];
+
+        for(int i = 1; i < nLength; i++)
+        {
+            if(array[i] > B[nLISLen - 1])
+            {
+                B[nLISLen] = array[i];
+                nLISLen++;
+            }
+            else
+            {
+                int pos = BinarySearch(B, array[i], nLISLen);
+                B[pos] = array[i];
+            }
+        }
+        return nLISLen;
     }
