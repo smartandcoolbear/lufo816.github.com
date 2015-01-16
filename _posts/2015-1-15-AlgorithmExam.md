@@ -374,6 +374,27 @@ tags:
 
 **并查集**
 
+  int p[555], r[555];//p[i]=j表示i的父节点是j，r[i]表示根节点为i的树的高度，初始p[i]=i，r[i]=0
+  int root(int x) {//返回x的根节点
+      if (p[x] == x)
+          return x;
+      else
+          return p[x] = root(p[x]);
+  }
+
+  void merge(int x, int y) {
+      x = root(x);
+      y = root(y);
+      if (r[x] > r[y])
+          p[y] = x;
+      else if (r[x] < r[y])
+          p[x] = y;
+      else {
+          p[y] = x;
+          r[x]++;
+      }
+  }
+
 **最大连续子序列**
 
     int maxsum(int a[n])    
@@ -460,3 +481,122 @@ f[i][v]=max{f[i-1][v],f[i][v-c[i]]+w[i]}
 有N种物品和一个容量为V的背包。第i种物品最多有n[i]件可用。
 
 f[i][v]=max{f[i-1][v-k*c[i]]+k*w[i]|0<=k<=n[i]}
+
+**BFS**
+
+略
+
+**DFS**
+
+略
+
+**最小生成树**
+
+每次选能把一个不在树中的节点合并起来的边(利用并查集)中最小的一条加在图中。
+
+**拓扑排序**
+
+略
+
+**最短路**
+
+Dijkstra，求单源、无负权的最短路。
+
+    q.push(0);
+    while (!q.empty()) {
+        int temp = q.front();
+        q.pop();
+        for (i = 0; i < n; i++) {
+          //w[i]表示第i点到起始点的距离
+            if (w[i] > w[temp] + dis[temp][i]) {
+                w[i] = w[temp] + dis[temp][i];
+                q.push(i);
+            }
+        }
+    }
+    shortest = w[n - 1];
+
+**无向图判断并输出环**
+　　　　#define INT_MAX -1
+    void dfsVisit(vector<vector<int> >&graph, int node, vector<int>&visit,
+                 vector<int>&father)
+    {
+      int n = graph.size();
+      visit[node] = 1;
+      for(int i = 0; i < n; i++)
+          if(i != node && graph[node][i] != INT_MAX)
+          {
+              if(visit[i] == 1 && i != father[node])//找到一个环
+              {
+                  int tmp = node;
+                  cout<<"cycle: ";
+                  while(tmp != i)
+                  {
+                      cout<<tmp<<"->";
+                      tmp = father[tmp];
+                  }
+                  cout<<tmp<<endl;
+              }
+              else if(visit[i] == 0)
+              {
+                  father[i] = node;
+                  dfsVisit(graph, i, visit, father);
+              }
+          }
+      visit[node] = 2;
+    }
+
+    void dfs(vector<vector<int> >&graph)
+    {
+      int n = graph.size();
+      vector<int> visit(n, 0); //visit按照算法导论22.3节分为三种状态
+      vector<int> father(n, -1);// father[i] 记录遍历过程中i的父节点
+      for(int i = 0; i < n; i++)
+          if(visit[i] == 0)
+              dfsVisit(graph, i, visit, father);
+    }
+
+**有向图判断并输出环**
+
+　　　　#define INT_MAX -1
+    stack<int> tuopu;
+     
+    void dfsVisit(vector<vector<int> >&graph, int node, vector<int>&visit,
+                   vector<int>&father)
+    {
+        int n = graph.size();
+        visit[node] = 1;
+        //cout<<node<<"-\n";
+        for(int i = 0; i < n; i++)
+            if(i != node && graph[node][i] != INT_MAX)
+            {
+                if(visit[i] == 1 && i != father[node])//找到一个环
+                {
+                    int tmp = node;
+                    cout<<"cycle: ";
+                    while(tmp != i)
+                    {
+                        cout<<tmp<<"->";
+                        tmp = father[tmp];
+                    }
+                    cout<<tmp<<endl;
+                }
+                else if(visit[i] == 0)
+                {
+                    father[i] = node;
+                    dfsVisit(graph, i, visit, father);
+                }
+            }
+        visit[node] = 2;
+        tuopu.push(node);
+    }
+     
+    void dfs(vector<vector<int> >&graph)
+    {
+        int n = graph.size();
+        vector<int> visit(n, 0); //visit按照算法导论22.3节分为三种状态
+        vector<int> father(n, -1);// father[i] 记录遍历过程中i的父节点
+        for(int i = 0; i < n; i++)
+            if(visit[i] == 0)
+                dfsVisit(graph, i, visit, father);
+    }
