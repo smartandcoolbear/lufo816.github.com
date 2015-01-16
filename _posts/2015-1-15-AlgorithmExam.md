@@ -374,15 +374,15 @@ tags:
 
 **并查集**
 
-  int p[555], r[555];//p[i]=j表示i的父节点是j，r[i]表示根节点为i的树的高度，初始p[i]=i，r[i]=0
-  int root(int x) {//返回x的根节点
+    int p[555], r[555];//p[i]=j表示i的父节点是j，r[i]表示根节点为i的树的高度，初始p[i]=i，r[i]=0
+    int root(int x) {//返回x的根节点
       if (p[x] == x)
           return x;
       else
           return p[x] = root(p[x]);
-  }
+    }
 
-  void merge(int x, int y) {
+    void merge(int x, int y) {
       x = root(x);
       y = root(y);
       if (r[x] > r[y])
@@ -393,7 +393,7 @@ tags:
           p[y] = x;
           r[x]++;
       }
-  }
+    }
 
 **最大连续子序列**
 
