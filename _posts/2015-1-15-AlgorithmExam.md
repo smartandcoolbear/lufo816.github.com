@@ -231,6 +231,149 @@ tags:
         }
     }
 
+**最大公约数**
+
+    int gcd(int m, int n) {
+        if (m == 0) return n;
+        if (n == 0) return m;
+        if (m < n) {
+            int tmp = m;
+            m = n;
+            n = tmp;
+        }
+        while (n != 0) {
+            int tmp = m % n;
+            m = n;
+            n = tmp;
+        }
+        return m;
+    }
+
+**逆序对**
+
+    double num;//逆序对个数
+
+    void MergeArray(int a[], int begin, int mid, int end, int temp[]) {
+        int i = begin, j = mid + 1, k = 0;
+        while (i <= mid && j <= end) {
+            if (a[i] <= a[j]) {
+                temp[k] = a[i];
+                k++;
+                i++;
+            } else {
+                temp[k] = a[j];
+                k++;
+                j++;
+                num += mid - i + 1;
+            }
+        }
+        while (i <= mid) {
+            temp[k] = a[i];
+            k++;
+            i++;
+        }
+        while (j <= end) {
+            temp[k] = a[j];
+            k++;
+            j++;
+        }
+        for (i = 0; i < k; i++)
+            a[begin + i] = temp[i];
+    }
+
+    void MergeSort(int a[], int begin, int end, int temp[]) {//a为要求逆序对个数的数组,begin=0，end=n-1
+        if (begin < end) {
+            int mid = (begin + end) / 2;
+            MergeSort(a, begin, mid, temp);
+            MergeSort(a, mid + 1, end, temp);
+            MergeArray(a, begin, mid, end, temp);
+        }
+    }
+
+**二分图最大匹配**
+
+    #define M 20
+    #define inf 0x3f3f3f3f
+
+    int n, nx, ny;
+    int link_[M], lx[M], ly[M], slack[M];    //lx,ly为顶标，nx,ny分别为x点集y点集的个数
+    int visx[M], visy[M], w[M][M];//w保存图的信息
+
+    int DFS(int x) {
+        visx[x] = 1;
+        for (int y = 1; y <= ny; y++) {
+            if (visy[y])
+                continue;
+            int t = lx[x] + ly[y] - w[x][y];
+            if (t == 0)       //
+                    {
+                visy[y] = 1;
+                if (link_[y] == -1 || DFS(link_[y])) {
+                    link_[y] = x;
+                    return 1;
+                }
+            } else if (slack[y] > t)  //不在相等子图中slack 取最小的
+                slack[y] = t;
+        }
+        return 0;
+    }
+    int KM() {
+        int i, j;
+        memset(link_, -1, sizeof(link_));
+        memset(ly, 0, sizeof(ly));
+        for (i = 1; i <= nx; i++)            //lx初始化为与它关联边中最大的
+            for (j = 1, lx[i] = -inf; j <= ny; j++)
+                if (w[i][j] > lx[i])
+                    lx[i] = w[i][j];
+
+        for (int x = 1; x <= nx; x++) {
+            for (i = 1; i <= ny; i++)
+                slack[i] = inf;
+            while (1) {
+                memset(visx, 0, sizeof(visx));
+                memset(visy, 0, sizeof(visy));
+                if (DFS(x))     //若成功（找到了增广轨），则该点增广完成，进入下一个点的增广
+                    break;  //若失败（没有找到增广轨），则需要改变一些点的标号，使得图中可行边的数量增加。
+                            //方法为：将所有在增广轨中（就是在增广过程中遍历到）的X方点的标号全部减去一个常数d，
+                            //所有在增广轨中的Y方点的标号全部加上一个常数d
+                int d = inf;
+                for (i = 1; i <= ny; i++)
+                    if (!visy[i] && d > slack[i])
+                        d = slack[i];
+                for (i = 1; i <= nx; i++)
+                    if (visx[i])
+                        lx[i] -= d;
+                for (i = 1; i <= ny; i++)  //修改顶标后，要把所有不在交错树中的Y顶点的slack值都减去d
+                    if (visy[i])
+                        ly[i] += d;
+                    else
+                        slack[i] -= d;
+            }
+        }
+        int res = 0;
+        for (i = 1; i <= ny; i++)
+            if (link_[i] > -1)
+                res += w[link_[i]][i];
+        return res;
+    }
+    int main() {
+        int i, j, t;
+        scanf("%d", &t);
+        while (t--) {
+            scanf("%d", &n);
+            nx = ny = n;
+            //  memset (w,0,sizeof(w));
+            for (i = 1; i <= n; i++)
+                for (j = 1; j <= n; j++)
+                    scanf("%d", &w[i][j]);
+            int ans = KM();
+            printf("%d\n", ans);
+        }
+        return 0;
+    }     
+
+**并查集**
+
 **最大连续子序列**
 
     int maxsum(int a[n])    
