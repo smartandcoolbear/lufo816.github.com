@@ -518,7 +518,7 @@ Dijkstra，求单源、无负权的最短路。
 
 **无向图判断并输出环**
 
-　　　　#define INT_MAX -1
+    #define INT_MAX -1 //表示node间没有路
     void dfsVisit(vector<vector<int> >&graph, int node, vector<int>&visit,
                  vector<int>&father)
     {
@@ -558,7 +558,7 @@ Dijkstra，求单源、无负权的最短路。
 
 **有向图判断并输出环**
 
-　　　　#define INT_MAX -1
+    #define INT_MAX -1　//表示node间没有路
     stack<int> tuopu;
     void dfsVisit(vector<vector<int> >&graph, int node, vector<int>&visit,
                    vector<int>&father)
