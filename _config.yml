@@ -18,6 +18,9 @@ navigations:
   - title: About
     class: fa fa-user
     href: /about.html
+  - title: Inspiration
+    class: fa fa-comment-o
+    href: /inspiration.html
   - title: Blogroll
     class: fa fa-link
     href: /links.html
