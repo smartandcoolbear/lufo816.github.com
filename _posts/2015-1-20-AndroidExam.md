@@ -109,3 +109,24 @@ Android期末机考资料。
     autoAdapter = new ArrayAdapter<String>(MyActivity.this, android.R.layout.simple_dropdown_item_1line, autoStr);
     mEditText.setAdapter(autoAdapter);
     mEditText.setThreshold(1);
+
+**多线程**
+
+    final Handler handler = new Handler() {
+        @Override
+        public void handleMessage(Message msg) {
+            Bundle b = msg.getData();
+            String state = b.get("state").toString();
+        }
+    };
+     class DownloadThread implements Runnable {
+        @Override
+        public void run() {
+            Bundle b = new Bundle();
+            b.putString("state", "test");
+            Message msg = handler.obtainMessage();
+            msg.setData(b);
+            handler.sendMessage(msg);
+        }
+    }
+    new Thread(new DownloadThread()).start();
