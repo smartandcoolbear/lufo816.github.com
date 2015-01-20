@@ -38,13 +38,14 @@ Android期末机考资料。
 **ListView与SQLite**
 
     db.execSQL("create table contacts (_id integer primary key autoincrement, student_id varchar(10))");//创建DataBaseHelper extends SQLiteOpenHelper，onCreate内执行
-
     private DataBaseHelper helper;
     private SimpleCursorAdapter cursorAdapter;
     private Cursor cursor;
     Context context=this;
     public void inflateListView(Cursor cursor) {//更新ListView
-        cursorAdapter = new SimpleCursorAdapter(context,R.layout.item,cursor,new String[]{"student_id"},new int[]{R.id.student_id}, 0);
+        cursorAdapter = new SimpleCursorAdapter(context,R.layout.item,cursor,
+new String[]{"student_id"},new int[]{R.id.student_id}, 0);
+    //其他ListView类似，把cursor改为ArrayList<Map<String, Object>> myDataList = new ArrayList<Map<String, Object>>();
         mListView.setAdapter(cursorAdapter);
     }
     String s = mEditText.getText().toString();//增
