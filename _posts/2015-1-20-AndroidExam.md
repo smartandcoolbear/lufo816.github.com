@@ -34,3 +34,53 @@ Android期末机考资料。
     intent.putExtra("result", s);
     NewActivity.this.setResult(RESULT_OK, intent);
     NewActivity.this.finish();
+
+**ListView与SQLite**
+
+    db.execSQL("create table contacts (_id integer primary key autoincrement, student_id varchar(10))");//创建DataBaseHelper extends SQLiteOpenHelper，onCreate内执行
+
+    private DataBaseHelper helper;
+    private SimpleCursorAdapter cursorAdapter;
+    private Cursor cursor;
+    Context context=this;
+    public void inflateListView(Cursor cursor) {//更新ListView
+        cursorAdapter = new SimpleCursorAdapter(context,R.layout.item,cursor,new String[]{"student_id"},new int[]{R.id.student_id}, 0);
+        mListView.setAdapter(cursorAdapter);
+    }
+    String s = mEditText.getText().toString();//增
+    ContentValues values = new ContentValues();
+    values.put("student_id", s + " ");
+    SQLiteDatabase db = helper.getWritableDatabase();
+    db.insert("contacts", null, values);
+    cursor = helper.getReadableDatabase().query("contacts", null, null, null, null, null, null);
+    inflateListView(cursor);
+    mListView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {//删
+        @Override
+        public boolean onItemLongClick(AdapterView<?> parent, View view, final int position, long id) {
+            AlertDialog.Builder builder = new AlertDialog.Builder(MyActivity.this);
+            builder.setMessage("delete?");
+            builder.setPositiveButton("confirm", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialogInterface, int i) {
+                    cursor = helper.getReadableDatabase().query("contacts", null, null, null, null, null, null);
+                    cursor.moveToPosition(position);
+                    long id = cursor.getLong(0);
+                    SQLiteDatabase db = helper.getWritableDatabase();
+                    db.execSQL("delete from contacts where _id =" + id);
+                    cursor = helper.getReadableDatabase().query("contacts", null, null, null, null, null, null);
+                    inflateListView(cursor);
+                }
+            });
+            builder.setNegativeButton("cancel", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialogInterface, int i) {
+                    dialogInterface.dismiss();
+                }
+            });
+            builder.create().show();
+            return true;
+        }
+    });
+    String whereClause = "_id=?";//改
+    String[] whereArgs = {String.valueOf(id)};
+    db.update("contacts", values, whereClause, whereArgs);
