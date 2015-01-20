@@ -84,3 +84,28 @@ Android期末机考资料。
     String whereClause = "_id=?";//改
     String[] whereArgs = {String.valueOf(id)};
     db.update("contacts", values, whereClause, whereArgs);
+
+**自动补全(SharedPreferences)**
+
+    private static final String DATABASE = "Database";
+    private static final String PATH = "/data/data/com.example.lufo.ex/shared_prefs/Database.xml";
+    private SharedPreferences mSharedPreferences;
+    private SharedPreferences.Editor mEditor;
+    private ArrayList<String> autoStr = new ArrayList<String>();
+    private ArrayAdapter<String> autoAdapter;
+    mSharedPreferences = getSharedPreferences(DATABASE, Activity.MODE_PRIVATE);
+mEditor = mSharedPreferences.edit();
+Map<String, ?> mMap = mSharedPreferences.getAll();
+for (Map.Entry entry : mMap.entrySet())
+    autoStr.add(entry.getKey().toString());
+autoAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_dropdown_item_1line, autoStr);
+    mEditor.putString(s, "");//add
+    autoStr.add(s);
+    mEditor.commit();
+    autoAdapter = new ArrayAdapter<String>(MyActivity.this, android.R.layout.simple_dropdown_item_1line, autoStr);
+    mEditor.remove(usernameInput.getText().toString());//delete
+    mEditor.commit();
+    autoStr.remove(usernameInput.getText().toString());
+    autoAdapter = new ArrayAdapter<String>(MyActivity.this, android.R.layout.simple_dropdown_item_1line, autoStr);
+    mEditText.setAdapter(autoAdapter);
+    mEditText.setThreshold(1);
