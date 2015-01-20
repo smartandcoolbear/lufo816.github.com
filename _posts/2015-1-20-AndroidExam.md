@@ -94,11 +94,11 @@ Android期末机考资料。
     private ArrayList<String> autoStr = new ArrayList<String>();
     private ArrayAdapter<String> autoAdapter;
     mSharedPreferences = getSharedPreferences(DATABASE, Activity.MODE_PRIVATE);
-mEditor = mSharedPreferences.edit();
-Map<String, ?> mMap = mSharedPreferences.getAll();
-for (Map.Entry entry : mMap.entrySet())
-    autoStr.add(entry.getKey().toString());
-autoAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_dropdown_item_1line, autoStr);
+    mEditor = mSharedPreferences.edit();
+    Map<String, ?> mMap = mSharedPreferences.getAll();
+    for (Map.Entry entry : mMap.entrySet())
+        autoStr.add(entry.getKey().toString());
+    autoAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_dropdown_item_1line, autoStr);
     mEditor.putString(s, "");//add
     autoStr.add(s);
     mEditor.commit();
