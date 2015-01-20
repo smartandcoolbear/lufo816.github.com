@@ -18,9 +18,9 @@ navigations:
   - title: About
     class: fa fa-user
     href: /about.html
-  - title: Inspiration
+  - title: Shihuo
     class: fa fa-comment-o
-    href: /inspiration.html
+    href: /shihuo.html
   - title: Blogroll
     class: fa fa-link
     href: /links.html
