@@ -13,7 +13,7 @@ Interested in Maching learning,Data mining
 
 blog:[lufo.github.io](http://lufo816.github.io/)
 
-email:[lufo816@gmail.com](lufo816@gmail.com)
+email:[lufo816@gmail.com](https://lufo816@gmail.com)
 
 **Projects**
 
