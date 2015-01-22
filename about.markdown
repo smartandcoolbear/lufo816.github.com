@@ -3,24 +3,22 @@ title: about
 layout: page
 ---
 
-a
+**Basic information**
 
-> Student in SMIE,SYSU
+刘学博,lufo
 
-who involved in 
+Student in School of Mobile Information Engineering,Sun Yat-Sen University
 
-> [github](https://github.com/lufo816)
+Interested in Maching learning,Data mining
 
-mail
+blog:[lufo.github.io](http://lufo816.github.io/)
 
-> lufo816@gmail.com
+email:[lufo816@gmail.com](lufo816@gmail.com)
 
-or follow 
+**Projects**
 
-> [lufo_in_twitter](https://twitter.com/lufo816)
+[TwitterRank](https://github.com/lufo816/TwitterRank)
 
-or
+[WeChatCookBook](https://github.com/lufo816/WeiXinCookbook)
 
->[lufo_in_zhihu](http://www.zhihu.com/people/lufo)
 
-to reach me
