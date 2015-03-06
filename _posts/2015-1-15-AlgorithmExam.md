@@ -417,7 +417,7 @@ tags:
 
 c[i,j]=0 if i=0 or j=0
 
-c[i,j]=c[i-1,j-1] if a[i]=b[j]
+c[i,j]=c[i-1,j-1]+1 if a[i]=b[j]
 
 c[i,j]=max(c[i,j-1],c[i-1,j]) if a[i]!=b[j]
 
