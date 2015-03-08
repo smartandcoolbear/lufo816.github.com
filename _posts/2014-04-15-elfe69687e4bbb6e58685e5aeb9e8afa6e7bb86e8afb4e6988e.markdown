@@ -9,6 +9,7 @@ wordpress_id: 198
 tags:
 - linux
 - skill
+- compiler
 ---
 
 ELF文件格式是一个开放标准，各种UNIX系统的可执行文件都采用ELF格式，它有三种不同的类型：可重定位的目标文件（Relocatable，或者Object File），可执行文件（Executable），共享库（Shared Object，或者Shared Library）。
