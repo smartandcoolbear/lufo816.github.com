@@ -2,6 +2,11 @@
 title: links
 layout: page
 ---
+[IPN 播客网络](http://ipn.li/)
+
+[apple4us](http://apple4us.com/)
+
+[当然我在扯淡](http://www.yinwang.org/)
 
 [rusty shutter](http://lhzhang.com/)
 
