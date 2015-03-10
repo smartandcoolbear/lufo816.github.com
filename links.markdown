@@ -2,6 +2,8 @@
 title: links
 layout: page
 ---
+[木遥的博客](http://blog.farmostwood.net/)
+
 [IPN 播客网络](http://ipn.li/)
 
 [apple4us](http://apple4us.com/)
