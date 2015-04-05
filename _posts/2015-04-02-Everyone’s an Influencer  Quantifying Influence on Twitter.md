@@ -1,5 +1,5 @@
 ---
-title: Everyone’s an Influencer: Quantifying Influence on Twitter 阅读笔记
+title: Everyone’s an influencer quantifying influence on twitter 阅读笔记
 layout: post
 tags:
   - algorithm
