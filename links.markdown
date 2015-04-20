@@ -10,6 +10,8 @@ layout: page
 
 [当然我在扯淡](http://www.yinwang.org/)
 
+[pre-sence](http://pre-sence.com/)
+
 [Andrew Liu](http://andrewliu.tk/)
 
 [laike9m's blog](http://laike9m.com/)
