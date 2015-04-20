@@ -10,6 +10,10 @@ layout: page
 
 [当然我在扯淡](http://www.yinwang.org/)
 
+[Andrew Liu](http://andrewliu.tk/)
+
+[laike9m's blog](http://laike9m.com/)
+
 [rusty shutter](http://lhzhang.com/)
 
 [Wei Li](http://liweithu.me/)
