@@ -27,6 +27,8 @@ layout: page
 - **应用开发**
 	- "大学生小管家"学生助手:大学生时间管理应用,入选[中山大学大学生创新训练计划](http://jwc.sysu.edu.cn/Item/8605.aspx),具有导入课程表,设定闹钟等功能,并且能根据天气状况调节闹钟.个人负责后台开发.实现语言:Java,Python
 	- Android平台的计步器应用:[点此查看项目主页](https://github.com/lufo816/Pedometer).一个典型的计步器 App,具有记步,绘画路径,计算卡路里,设定跑步计划,查看好友排名等功能.个人负责Android程序的初版及所有后台工作.实现语言:Java,Python
+- **其他**
+	- 最流行的[知乎民间 API](https://github.com/egrcc/zhihu-python)(知乎未提供官方API)作者之一
 
 
 ##其他
