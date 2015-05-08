@@ -20,7 +20,6 @@ tags:
 需要预测的:
 
 - average, minimum, and maximum total influence
-- average, minimum, and maximum local influence
 
 结果预测的结果与真实结果的的均值(由于回归树只有有限个结果,这里指某个结果所有样本的真实值的均值)拟合度很高,回归系数(R2)为0.98,但不取均值直接比较 R2=0.34,不是很理想,于是作者开始作死了.
 
