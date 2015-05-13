@@ -2,7 +2,7 @@
 title: Realization of TwitterRank Algorithm
 layout: post
 tags:
-  - machine learning
+  - machine_learning
   - algorithm
 ---
 
