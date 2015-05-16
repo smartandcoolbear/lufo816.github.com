@@ -22,7 +22,7 @@ navigations:
     class: fa fa-comment-o
     href: /shihuo.html
   - title: ToBuy
-    class: fa fa-comment-o
+    class: fa fa-shopping-cart
     href: /to_buy_list.html
   - title: Blogroll
     class: fa fa-link
