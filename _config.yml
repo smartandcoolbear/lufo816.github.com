@@ -21,6 +21,9 @@ navigations:
   - title: Shihuo
     class: fa fa-comment-o
     href: /shihuo.html
+  - title: ToBuy
+    class: fa fa-comment-o
+    href: /to_buy_list.html
   - title: Blogroll
     class: fa fa-link
     href: /links.html
