@@ -10,6 +10,10 @@ layout: page
 
 [当然我在扯淡](http://www.yinwang.org/)
 
+[BYvoid](https://www.byvoid.com/)
+
+[hahack](http://hahack.com/)
+
 [pre-sence](http://pre-sence.com/)
 
 [Andrew Liu](http://andrewliu.tk/)
