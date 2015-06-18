@@ -1,8 +1,7 @@
-markdown: rdiscount
 pygments: true
 permalink: /:year/:month/:day/:title.html
 name: "lufo"
-markdown: rdiscount
+markdown: Kramdown
 
 author: "lufo"
 atom-baseurl: "http://lufo816.github.com"
