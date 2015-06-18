@@ -1,11 +1,10 @@
-markdown: redcarpet
+markdown: rdiscount
 pygments: true
 permalink: /:year/:month/:day/:title.html
 name: "lufo"
 
 author: "lufo"
 atom-baseurl: "http://lufo816.github.com"
-disqus: "gopherwood"
 
 navigations:
   - title: Archive
