@@ -19,7 +19,7 @@ layout: page
 ##论文
 - **Xuebo Liu**, Haoran Xie, Yanghui Rao, Qing Li, Fu Lee Wang, Tak-Lam Wong, [User Authority Ranking Models for Community Question Answering](/docs/User Authority Ranking Models for Community Question Answering.pdf), [Information & Management 2015](http://www.journals.elsevier.com/information-and-management)
 - **Xuebo Liu**, Shuang Ye, Yonghao Luo, Yanghui Rao, [ZhihuRank: A Topic-Sensitive Expert Finding Algorithm in Community Question Answering Websites](/docs/ZhihuRank.pdf), [International Conference on Web-based Learning (ICWL) 2015](http://www.cityu.edu.hk/merc/icwl/icwl2015home.htm)
-- Shuang Ye, KaiChun Lin, XinYi Lin, **XueBo Liu**, Chang-Dong Wang, HanChen Yu, Schedule Management Application ‘WiDay’ based on SAE cloud platform, [IEEE International  Confrence on Big Data and Cloud Computing 2015](http://www.cybermatics.org/SWC2015/CBD/CBD2015.htm)
+- Shuang Ye, KaiChun Lin, XinYi Lin, **XueBo Liu**, Chang-Dong Wang, HanChen Yu, Schedule Management Application ‘WiDay’ based on SAE cloud platform, [IEEE International  Conference on Big Data and Cloud Computing 2015](http://www.cybermatics.org/SWC2015/CBD/CBD2015.htm)
 
 
 ##项目经历
@@ -33,3 +33,9 @@ layout: page
 	- [基于webpy框架查菜谱微信公共号](https://github.com/lufo816/WeiXinCookbook):方便用户查看菜谱,用户输入食材名,如“牛肉”,“西瓜”,“黄瓜”，或菜谱的特点，如“清凉”,“辣”,公众号可返回符合用户要求的菜谱.个人负责整个项目
 - **其他**
 	- 最流行的[知乎民间 API](https://github.com/egrcc/zhihu-python)(Github上有465个stars)作者之一
+	
+-----
+
+如果这个博客对您有所帮助，您可以扫描下面的二维码请我喝杯咖啡：
+
+![](/media/files/2015/07/09.jpg) ![](/media/files/2015/07/10.jpg)
