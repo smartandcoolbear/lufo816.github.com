@@ -28,7 +28,7 @@ layout: page
 
 [混沌的云](http://blog.zerob13.in/)
 
-[darkof](http://www.darkof.com/)
+[Adam Wen's Blog](http://www.darkof.com/)
 
 [zhangxiaoyang](http://zhangxiaoyang.me/)
 
