@@ -38,4 +38,4 @@ layout: page
 
 如果这个博客对您有所帮助，您可以扫描下面的二维码请我喝杯咖啡：
 
-![](/media/files/2015/07/09.jpg) ![](/media/files/2015/07/10.jpg)
+![](/media/files/2015/07/09.jpg =128x128) ![](/media/files/2015/07/10.jpg =128x128)
