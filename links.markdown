@@ -28,6 +28,8 @@ layout: page
 
 [混沌的云](http://blog.zerob13.in/)
 
+[darkof](http://www.darkof.com/)
+
 [zhangxiaoyang](http://zhangxiaoyang.me/)
 
 想出现在这里请联系我: )
