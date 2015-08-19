@@ -16,7 +16,7 @@ layout: page
 
 [pre-sence](http://pre-sence.com/)
 
-[Andrew Liu](http://andrewliu.tk/)
+[Andrew Liu](http://andrewliu.in/)
 
 [laike9m's blog](http://laike9m.com/)
 
@@ -27,9 +27,5 @@ layout: page
 [我爱自然语言处理](http://www.52nlp.cn/)
 
 [混沌的云](http://blog.zerob13.in/)
-
-[Adam Wen's Blog](http://www.darkof.com/)
-
-[zhangxiaoyang](http://zhangxiaoyang.me/)
 
 想出现在这里请联系我: )
