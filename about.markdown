@@ -17,7 +17,6 @@ layout: page
 - 2015.7-现在:于中国科学院重庆研究院[智能多媒体技术研究中心](http://www.cigit.cas.cn/jggk/ggkypt/201403/t20140328_4082809.html)人脸识别组实习,主要从事人脸Alignment, 数据抓取等工作
 
 ##论文
-- **Xuebo Liu**, Haoran Xie, Yanghui Rao, Qing Li, Fu Lee Wang, Tak-Lam Wong, [User Authority Ranking Models for Community Question Answering](/docs/User Authority Ranking Models for Community Question Answering.pdf), [Information & Management 2015](http://www.journals.elsevier.com/information-and-management)
 - **Xuebo Liu**, Shuang Ye, Yonghao Luo, Yanghui Rao, [ZhihuRank: A Topic-Sensitive Expert Finding Algorithm in Community Question Answering Websites](/docs/ZhihuRank.pdf), [International Conference on Web-based Learning (ICWL) 2015](http://www.cityu.edu.hk/merc/icwl/icwl2015home.htm)
 - Shuang Ye, KaiChun Lin, XinYi Lin, **XueBo Liu**, Chang-Dong Wang, HanChen Yu, Schedule Management Application ‘WiDay’ based on SAE cloud platform, [IEEE International  Conference on Big Data and Cloud Computing 2015](http://www.cybermatics.org/SWC2015/CBD/CBD2015.htm)
 
