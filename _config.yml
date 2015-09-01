@@ -3,4 +3,3 @@ permalink: /:year/:month/:title/
 url: http://lufo.me
 author: lufo
 highlighter: pygments
-
