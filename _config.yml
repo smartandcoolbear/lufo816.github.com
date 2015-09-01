@@ -1,5 +1,9 @@
 markdown: rdiscount
 permalink: /:year/:month/:title/
 url: http://lufo.me
-author: lufo
-highlighter: pygments
+pygments: true
+permalink: /:year/:month/:day/:title.html
+name: "lufo"
+
+author: "lufo"
+atom-baseurl: "http://lufo816.github.com"
