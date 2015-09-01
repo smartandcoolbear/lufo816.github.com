@@ -1,7 +1,9 @@
 ---
 title: links
 layout: page
+comments: yes
 ---
+
 [木遥的博客](http://blog.farmostwood.net/)
 
 [IPN 播客网络](http://ipn.li/)
@@ -29,3 +31,4 @@ layout: page
 [混沌的云](http://blog.zerob13.in/)
 
 想出现在这里请联系我: )
+
