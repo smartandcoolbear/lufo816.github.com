@@ -3,6 +3,5 @@ permalink: /:year/:month/:title/
 url: http://lufo.me
 pygments: true
 name: "lufo"
-
 author: "lufo"
 atom-baseurl: "http://lufo816.github.com"
