@@ -12,6 +12,8 @@ comments: yes
 
 [当然我在扯淡](http://www.yinwang.org/)
 
+[谢益辉](http://yihui.name/)
+
 [BYvoid](https://www.byvoid.com/)
 
 [hahack](http://hahack.com/)

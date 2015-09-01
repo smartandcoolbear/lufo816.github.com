@@ -3,6 +3,7 @@ title: About me
 layout: page
 comments: yes
 ---
+
 ##基本信息
 
 - 姓名: 刘学博
