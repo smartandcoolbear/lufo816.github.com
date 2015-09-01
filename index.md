@@ -1,5 +1,5 @@
 ---
-title: lufo
+title: Home
 layout: page
 ---
 

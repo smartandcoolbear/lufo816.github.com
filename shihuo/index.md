@@ -1,5 +1,5 @@
 ---
-title: shihuo
+title: ShīHuò
 layout: page
 ---
 
