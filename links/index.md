@@ -32,5 +32,6 @@ comments: yes
 
 [混沌的云](http://blog.zerob13.in/)
 
-想出现在这里请联系我: )
+[Chenfan Blog](http://jcf94.com/)
 
+想出现在这里请联系我: )
