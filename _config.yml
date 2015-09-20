@@ -1,5 +1,5 @@
 markdown: rdiscount
-permalink: /:year/:month/:day/:title/
+permalink: /:year/:month/:title/
 url: http://lufo.me
 pygments: true
 name: "lufo"
