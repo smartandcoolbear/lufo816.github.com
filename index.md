@@ -1,4 +1,3 @@
-``` 
 ---
 title: Home
 layout: page
@@ -17,7 +16,4 @@ layout: page
   </li>
 {% endfor %}
 </ul>
-```
-
-
 
