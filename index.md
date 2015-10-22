@@ -1,10 +1,7 @@
 ---
 title: Home
 layout: page
-comments: yes
 ---
-
-<ul class="listing">
 
 {% for post in site.posts %}
 
