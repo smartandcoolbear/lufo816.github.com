@@ -26,7 +26,7 @@ tags:
   - dict中一个key-value对为一个entry,保存指向key的指针,指向value的指针和hash值.
   - 在确定元素位置时,先对key计算hash,如果这个位置不可用则使用二次探测函数计算下一个位置.
   - entry有三个状态,开始创建时为unused状态,key,value都指向null,被使用时为active,key,value都指向PyObject,删除时为dummy状态,key指向dummy,value指向null,dummy本质为一个PyStringObject,表示这个元素被删除,但是这个查找时被删除元素后面可能有正确的key,所以遇到被删除的元素要继续查找下去,所以设为dummy状态和unused区分.
-  - 查找:先计算hash值,然后与dict元素数量相与,将hash值变为0到size-1,如果对应位置为unused,返回一个entry,如果对应未知的key与要查找的key相同(先判断地址,在判断值),否则查找下一个元素.对应位置为unused是返回的entry有两种:如果查找的路径下遇到了dummy,则记录下dummy的地址,最后返回这个dummy的entry,如果没有则返回unused的entry,因为dummy没有被删除,在插入时需要先搜索,如果在dummy上插入则直接修改dummy即可,不用浪费一个新的entry.
+  - 查找:先计算hash值,然后与dict元素数量相与,将hash值变为0到size-1,如果对应位置为unused,返回一个entry,如果对应位置的key与要查找的key相同(先判断地址,再判断值),则找到了要找的key,否则查找下一个元素.对应位置为unused时返回的entry有两种:如果查找的路径下遇到了dummy,则记录下dummy的地址,最后返回这个dummy的entry,如果没有则返回unused的entry,因为dummy没有被删除,在插入时需要先搜索,如果在dummy上插入则直接修改dummy即可,不用浪费一个新的entry.
   - 插入:先查找,如果有key就修改value,没有就在查找返回的entry上加入新的key,value.
   - 删除:先查找,然后删除key,value指向的内容,把entry从active变为dummy.
   - 当插入后active+dummy的个数占总entry数2/3时需要增加entry,因为这时碰撞率已经很高了,增加后的entry为8的指数且大于active的entry的4倍.
