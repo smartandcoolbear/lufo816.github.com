@@ -14,7 +14,7 @@ tags:
   - 其他整数:对其他整数,Python运行环境将提供一块内存空间,这些内存空间由这些大整数轮流使用,也就是说,谁需要的时候谁就使用.这样免去了不断地malloc之苦,又在一定程度上考虑了效率问题.free_list是一个管理空闲int内存的链表,每当没有空闲内存时,申请一个PyIntBlock,PyIntBlock默认保存一个可以保存82个int的数组和指向下一个PyIntBlock的指针.
 - PyStringObject
   - 不可变对象,带来的方便:可作为dict的键值,实现intern机制,不便:字符串修改需要重新申请内存.
-  - intern机制:建立dict:interned,key为已经被intern机制处理过的字符串对象,对一个字符串对象(比如'abc')进行intern机制时先看interned中有没有这个对象,如果有则将指针指向’abc’,之前创建的临时对象’abc’计数减为0,销毁.如果没有'abc’将它记录到interned中.
+  - intern机制:建立dict:interned,key为已经被intern机制处理过的字符串对象,对一个字符串对象(比如'abc')进行intern机制时先看interned中有没有这个对象,如果有则将指针指向’abc’,之前创建的临时对象’abc’计数减为0,销毁.如果没有'abc’将它记录到interned中.注意只包含字符,数字和下划线的字符串才会被intern,Python源码中解释是这样:This is generally restricted tostrings that **"looklike" Python identifiers**, although the intern() builtincan be used to force interning of any string.
   - 字符缓存:对一些字符(windows为0-255)有缓存机制,这些字符对象第一次创建时字符缓存池中的指针指向这个对象,导致它的计数永远大于0,不会消失,下次再使用时不需要重新创建对象.
   - 字符串连接效率低,使用+连接n个字符串需要申请n-1次内存,使用join()需要申请1次内存.
 - PyListObject
