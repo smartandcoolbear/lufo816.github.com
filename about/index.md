@@ -21,6 +21,7 @@ comments: yes
 
 ##论文发表
 - **Xuebo Liu**, Shuang Ye, Yonghao Luo, Yanghui Rao, [ZhihuRank: A Topic-Sensitive Expert Finding Algorithm in Community Question Answering Websites](http://lufo.me/docs/ZhihuRank.pdf), [International Conference on Web-based Learning (ICWL) 2015](http://www.cityu.edu.hk/merc/icwl/icwl2015home.htm)
+- 
 - Shuang Ye, KaiChun Lin, XinYi Lin, **XueBo Liu**, Chang-Dong Wang, HanChen Yu, Schedule Management Application ‘WiDay’ based on SAE cloud platform, [IEEE International  Conference on Big Data and Cloud Computing 2015](http://www.cybermatics.org/SWC2015/CBD/CBD2015.htm)
 
 
