@@ -21,7 +21,7 @@ comments: yes
 
 ##论文发表
 - **Xuebo Liu**, Shuang Ye, Yonghao Luo, Yanghui Rao, [ZhihuRank: A Topic-Sensitive Expert Finding Algorithm in Community Question Answering Websites](http://lufo.me/docs/ZhihuRank.pdf), [International Conference on Web-based Learning (ICWL) 2015](http://www.cityu.edu.hk/merc/icwl/icwl2015home.htm)
-- 
+- Xin Li, Yanghui Rao, Yanjia Chen, **Xuebo Liu**, Huan Huang, [Social Emotion Classification via Reader Perspective Weighted Model](http://lufo.me/docs/Social%20Emotion%20Classification%20via%20Reader%20Perspective%20Weighted%20Model.pdf), [AAAI 16 Student Abstract](www.aaai.org/Conferences/AAAI/2016/aaai16studentcall.php)
 - Shuang Ye, KaiChun Lin, XinYi Lin, **XueBo Liu**, Chang-Dong Wang, HanChen Yu, Schedule Management Application ‘WiDay’ based on SAE cloud platform, [IEEE International  Conference on Big Data and Cloud Computing 2015](http://www.cybermatics.org/SWC2015/CBD/CBD2015.htm)
 
 
@@ -36,6 +36,10 @@ comments: yes
 	- [基于webpy框架查菜谱微信公共号](https://github.com/lufo816/WeiXinCookbook):用户可在公众号中查询各种菜的做法,基于webpy框架进行开发,使用MySQL储存数据,调用聚合数据的API获取菜的做法,完成静态网页生成器将json格式的数据转化为网页推送给用户
 	- 最流行的[知乎民间 API](https://github.com/egrcc/zhihu-python)(Github上有超过500个stars):可以获取知乎的各种数据,使用requests库发送请求,使用BeautifulSoup对网页源码进行解析.个人负责修改Bug,添加功能,如获取每个答案赞同人列表等
 	
+##演讲
+
+- 2015年11月于广州华南理工大学进行关于发表在[ICWL 2015](http://www.cityu.edu.hk/merc/icwl/icwl2015home.htm)上论文的演讲,幻灯片在[这里](http://lufo.me/docs/pre_icwl_2015.pdf)
+
 -----
 
 如果这个博客对您有所帮助，您可以扫描下面的二维码请我喝杯咖啡:
