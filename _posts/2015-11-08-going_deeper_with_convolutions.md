@@ -15,11 +15,11 @@ tags:
 
 下面看一下inception层的结构:
 
-![](../media/files/2015/11/03.png)
+![](/media/files/2015/11/03.png)
 
 可以看到它是4个scale的feature的结合.3个黄色的1x1的卷积层都是降维的作用,作者认为降维后仍可以保留大部分原始信息.上一层的输出分别经过1x1,3x3,5x5的conv和pooling层最后结合在一起作为inception层的输出.下面看一下GoogleNet的结构,进一步解释inception层:
 
-![](../media/files/2015/11/04.png)
+![](/media/files/2015/11/04.png)
 
 以inception (3a)为例,它的输入是28x28x192,有192个chanel,1x1的conv只输出了64个chanel,降低了维数但保留了大部分信息,3x3和5x5的conv也都是在降维后进行,pooling层经过降维也只有32个chanel,最终的输出为28x28x256,chanel增加的很少.所以说inception层允许CNN更加deeper.
 
