@@ -4,7 +4,7 @@ layout: post
 tags:
   - cnn
   - dnn
-  - deep_learninginception
+  - deep_learning
   - face_verification
 ---
 
