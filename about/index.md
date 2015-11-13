@@ -13,11 +13,11 @@ comments: yes
 - 技能:熟悉Python,C,C++,长期使用Linux/Unix操作系统
 	
 ##实习经历
-- 2015.7至今:于中国科学院重庆研究院[智能多媒体技术研究中心](http://www.cigit.cas.cn/jggk/ggkypt/201403/t20140328_4082809.html)人脸识别组([云从科技](http://www.cloudwalk.cn/)研发组)实习,工作内容包括:
+- 2015.7-2015.9:于中国科学院重庆研究院[智能多媒体技术研究中心](http://www.cigit.cas.cn/jggk/ggkypt/201403/t20140328_4082809.html)人脸识别组([云从科技](http://www.cloudwalk.cn/)研发组)实习,工作内容包括:
 	- 进行实验:对比不同Alignment算法对人脸识别性能的影响,并提出改进方案
 	- 完善深度学习代码:尝试将PLDA算法作为loss function写入caffe的源代码中.尝试设计CNN完成图片去模糊的工作
 	- 数据抓取:完成爬虫抓取百度,人人,bing等网站的图片并进行自动筛选,部署到多台机器上,目标是抓取数十TB的数据,整理后将获得比现有数据集大至少一个数量级的数据集
-- 2014.3-2015.7:中山大学移动信息工程学院软件设计和操作系统的教学助理
+- 2014.3-2015.7:中山大学移动信息工程学院人工智能,软件设计的教学助理
 
 ##论文发表
 - **Xuebo Liu**, Shuang Ye, Yonghao Luo, Yanghui Rao, [ZhihuRank: A Topic-Sensitive Expert Finding Algorithm in Community Question Answering Websites](http://lufo.me/docs/ZhihuRank.pdf), [International Conference on Web-based Learning (ICWL) 2015](http://www.cityu.edu.hk/merc/icwl/icwl2015home.htm)
@@ -29,6 +29,7 @@ comments: yes
 
 - **机器学习**
 	- ZhihuRank:问答类社交网站中专家推荐创新算法,在社交类问答网站(知乎,Quora)中基于用户与问题间的主题相似度和用户间的赞同关系对每个问题推荐最适合回答这个问题的用户.算法基于LDA和PageRank,从知乎上抓取了超过20万条答案进行实验,效果比同类算法提高2%-10%,以第一作者完成论文并发表在ICWL 2015
+	- 人脸识别系统:完成基于深度学习的人脸识别系统.使用CNN提取图片特征,使用联合贝叶斯完成verification.使用alignment后的CASIA Webface进行训练,LFW数据及上测试人脸识别的准确度超过97%
 	- [语音识别系统](https://github.com/lufo816/SpeechRecognitionSystem):完成基于GMM和HMM的语音识别系统,可以识别特定的连续语音,如电话号码,单个数字的识别准确率超过90%,电话号码的识别准确率超过80%.使用MFCC作为特征,HMM中的每个state使用GMM表示,以word为单位进行识别,训练数据很少,增加数据可提升效果
 	- [TwitterRank](https://github.com/lufo816/TwitterRank):提取各个主题下最有影响力的Twitter用户,使用LDA算法提取主题,抓取Twitter上粉丝数前100的用户数据完成实验
 - **其他**
@@ -39,6 +40,7 @@ comments: yes
 ##演讲
 
 - 2015年11月于广州华南理工大学进行关于发表在[ICWL 2015](http://www.cityu.edu.hk/merc/icwl/icwl2015home.htm)上论文的演讲,幻灯片在[这里](http://lufo.me/docs/pre_icwl_2015.pdf)
+
 
 -----
 
