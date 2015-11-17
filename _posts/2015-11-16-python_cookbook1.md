@@ -1,5 +1,5 @@
 ---
-title: Python Cookbook笔记1:数据结构
+title: PythonCookbook笔记1:数据结构
 layout: post
 tags:
   - daily
