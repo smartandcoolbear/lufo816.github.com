@@ -1,9 +1,9 @@
 ---
-title: Python Cookbook笔记1:数据结构和算法layout: post
+title: Python Cookbook笔记1:数据结构
+layout: post
 tags:
   - daily
   - python
-  - data_structure
 ---
 
 最近开始读[Python Cookbook](http://chimera.labs.oreilly.com/books/1230000000393/),刚刚读完第一章,这一章介绍了Python中自带的各种数据结构,学习了很多之前不知道的.感觉这书组织不是特别有条理(非贬义),从哪里都可以开始读,主要介绍了Python的各种奇技淫巧,非常有用,有趣.下面是笔记:
