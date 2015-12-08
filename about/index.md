@@ -21,7 +21,7 @@ comments: yes
 
 ##论文发表
 - **Xuebo Liu**, Shuang Ye, Yonghao Luo, Yanghui Rao, [ZhihuRank: A Topic-Sensitive Expert Finding Algorithm in Community Question Answering Websites](http://lufo.me/docs/ZhihuRank.pdf), [International Conference on Web-based Learning (ICWL) 2015](http://www.cityu.edu.hk/merc/icwl/icwl2015home.htm)
-- Xin Li, Yanghui Rao, Yanjia Chen, **Xuebo Liu**, Huan Huang, [Social Emotion Classification via Reader Perspective Weighted Model](http://lufo.me/docs/Social%20Emotion%20Classification%20via%20Reader%20Perspective%20Weighted%20Model.pdf), [AAAI 16 Student Abstract](www.aaai.org/Conferences/AAAI/2016/aaai16studentcall.php)
+- Xin Li, Yanghui Rao, Yanjia Chen, **Xuebo Liu**, Huan Huang, Social Emotion Classification via Reader Perspective Weighted Model, [AAAI 16 Student Abstract](www.aaai.org/Conferences/AAAI/2016/aaai16studentcall.php)
 - Shuang Ye, KaiChun Lin, XinYi Lin, **XueBo Liu**, Chang-Dong Wang, HanChen Yu, Schedule Management Application ‘WiDay’ based on SAE cloud platform, [IEEE International  Conference on Big Data and Cloud Computing 2015](http://www.cybermatics.org/SWC2015/CBD/CBD2015.htm)
 
 
