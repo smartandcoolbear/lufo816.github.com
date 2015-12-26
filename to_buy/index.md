@@ -8,3 +8,4 @@ comments: yes
 - Filco 87圣手
 - HHKB Pro2
 - Air Jordan Future low
+- LEGO WALL•E
