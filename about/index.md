@@ -33,9 +33,9 @@ comments: yes
 
 ## 论文发表
 
-- **Xuebo Liu**, Shuang Ye, Yonghao Luo, Yanghui Rao, [ZhihuRank: A Topic-Sensitive Expert Finding Algorithm in Community Question Answering Websites](http://lufo.me/docs/ZhihuRank.pdf), [International Conference on Web-based Learning (ICWL) 2015](http://www.cityu.edu.hk/merc/icwl/icwl2015home.htm)
-- Xin Li, Yanghui Rao, Yanjia Chen, **Xuebo Liu**, Huan Huang, [Social Emotion Classification via Reader Perspective Weighted Model](http://lufo.me/docs/Social%20Emotion%20Classification%20via%20Reader%20Perspective%20Weighted%20Model.pdf), [AAAI 16 Student Abstract](www.aaai.org/Conferences/AAAI/2016/aaai16studentcall.php)
-- Xin Li, Haoran Xie, Yanghui Rao, Yanjia Chen, **Xuebo Liu**, Huan Huang and Fu Lee Wang, [Weighted Multi-label Classification Model for Sentiment Analysis of Online News](http://lufo.me/docs/Weighted%20Multi-label%20Classification%20Model%20for%20Sentiment%20Analysis%20of%20Online%20News.pdf), [Big data and smart computing (BigComp) 2016](http://conf2016.bigcomputing.org/main/)
+- **Xuebo Liu**, Shuang Ye, Yonghao Luo, Yanghui Rao, [ZhihuRank: A Topic-Sensitive Expert Finding Algorithm in Community Question Answering Websites](http://lufo.me/docs/ICWL2015.pdf), [International Conference on Web-based Learning (ICWL) 2015](http://www.cityu.edu.hk/merc/icwl/icwl2015home.htm)
+- Xin Li, Yanghui Rao, Yanjia Chen, **Xuebo Liu**, Huan Huang, [Social Emotion Classification via Reader Perspective Weighted Model](http://lufo.me/docs/AAAI2016.pdf), [AAAI 16 Student Abstract](www.aaai.org/Conferences/AAAI/2016/aaai16studentcall.php)
+- Xin Li, Haoran Xie, Yanghui Rao, Yanjia Chen, **Xuebo Liu**, Huan Huang and Fu Lee Wang, [Weighted Multi-label Classification Model for Sentiment Analysis of Online News](http://lufo.me/docs/BigComp2016.pdf), [Big data and smart computing (BigComp) 2016](http://conf2016.bigcomputing.org/main/)
 
 
 ## 项目经历
